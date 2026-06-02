@@ -63,15 +63,22 @@
 }
 
 @layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   html {
     scroll-behavior: smooth;
     min-height: 100%;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
     @apply bg-white text-neutral-900 antialiased;
     font-family: var(--font-sans);
     min-height: 100vh;
+    width: 100%;
     overflow-x: hidden;
   }
 
@@ -83,7 +90,17 @@
 
 @layer components {
   .container {
-    @apply mx-auto max-w-7xl px-6 lg:px-8;
+    @apply w-full mx-auto max-w-7xl px-6 lg:px-8;
+  }
+
+  img,
+  picture,
+  video,
+  iframe,
+  svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   .bg-gradient-hero {

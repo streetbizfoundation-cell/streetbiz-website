@@ -153,10 +153,12 @@ export default function ContactPage() {
             <div className="relative z-10 space-y-8">
               <H2 className="text-white text-3xl md:text-5xl font-serif max-w-2xl mx-auto">Want to support the movement immediately?</H2>
               <Link 
-                href="mailto:hello@streetbiz.co.za?subject=StreetBiz%20Donation%20Support" 
+                href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block px-12 py-6 bg-primary-600 text-white font-bold rounded-full hover:bg-primary-700 transition-all shadow-xl shadow-primary-600/30 scale-100 hover:scale-105"
               >
-                Contact Us To Donate
+                Donate Now
               </Link>
             </div>
             {/* Abstract decorative element */}

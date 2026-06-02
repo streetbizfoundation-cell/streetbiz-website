@@ -48,7 +48,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="overflow-hidden">
+    <main>
       {/* Hero Intro */}
       <section className="bg-neutral-900 py-24 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 z-0">

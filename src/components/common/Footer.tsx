@@ -79,7 +79,7 @@ export function Footer() {
             <h4 className="font-semibold text-neutral-900 mb-4">Get Involved</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/contact" className="text-neutral-600 hover:text-primary-500 transition-colors">
+                <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-primary-500 transition-colors">
                   Donate
                 </Link>
               </li>

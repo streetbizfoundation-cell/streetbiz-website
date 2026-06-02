@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import { Button } from './Button'
@@ -24,11 +25,17 @@ export function Header() {
       <div className="container">
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <div className="w-10 h-10 rounded-full bg-gradient-hero flex items-center justify-center text-white font-bold">
-              SBF
+          <Link href="/" className="flex items-center">
+            <div className="relative w-48 h-16 sm:w-52 sm:h-18 lg:w-56 lg:h-20">
+              <Image
+                src="/images/brand/streetbiz-logo.png"
+                alt="StreetBiz logo"
+                fill
+                sizes="240px"
+                className="object-contain"
+                priority
+              />
             </div>
-            <span className="hidden md:inline text-neutral-900">StreetBiz</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -46,7 +53,7 @@ export function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-4">
-            <Link href="/contact" className="hidden md:block">
+            <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer" className="hidden md:block">
               <Button size="md">
                 Donate
               </Button>
@@ -80,7 +87,7 @@ export function Header() {
               </Link>
             ))}
             <div className="pt-2 border-t border-neutral-200">
-              <Link href="/contact" onClick={() => setMobileOpen(false)}>
+              <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
                 <Button className="w-full">
                   Donate
                 </Button>

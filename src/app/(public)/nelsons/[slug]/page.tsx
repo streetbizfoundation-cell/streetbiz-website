@@ -56,7 +56,7 @@ export default async function NelsonProfilePage({ params }: NelsonProfilePagePro
   return (
     <main className="bg-white">
       {/* Hero Header */}
-      <section className="relative h-[70vh] min-h-[500px] flex items-end">
+      <section className="relative h-[55vh] md:h-[70vh] min-h-[380px] md:min-h-[500px] flex items-end">
         {profile.image_url && (
           <Image
             src={profile.image_url}
@@ -105,15 +105,17 @@ export default async function NelsonProfilePage({ params }: NelsonProfilePagePro
             </div>
             
             <div className="lg:col-span-4">
-              <div className="sticky top-32 space-y-8">
+              <div className="lg:sticky lg:top-32 space-y-8">
                 <div className="bg-neutral-50 p-8 rounded-3xl border border-neutral-100">
                   <h3 className="text-xl font-bold mb-4">Support {profile.name.split(' ')[0]}</h3>
                   <p className="text-neutral-600 mb-6 text-sm leading-relaxed">
                     By donating, you contribute directly to the resources and support systems that empower {profile.name.split(' ')[0]} and others in the movement.
                   </p>
-                  <Button className="w-full py-6 text-lg rounded-full">
-                    Donate in Honor of {profile.name.split(' ')[0]}
-                  </Button>
+                  <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer" className="w-full">
+                    <Button className="w-full py-6 text-lg rounded-full">
+                      Donate in Honor of {profile.name.split(' ')[0]}
+                    </Button>
+                  </Link>
                 </div>
 
                 <div className="p-8">

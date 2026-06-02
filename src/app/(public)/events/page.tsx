@@ -11,7 +11,7 @@ const upcomingEvents = [
     description: 'The Be a Nelson Conference brings Nelsons together from across provinces for leadership development, connection, and shared learning. It is a key gathering in the movement calendar and creates space for growth, collaboration, and strengthening the future of the movement.',
     actions: [
       { label: 'Enquire About the Conference', href: '/contact' },
-      { label: 'Sponsor the Conference', href: '/donate' },
+      { label: 'Sponsor the Conference', href: 'https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3', target: '_blank' },
     ],
   },
   {
@@ -67,7 +67,7 @@ export const metadata = {
 
 export default function EventsPage() {
   return (
-    <main className="overflow-hidden">
+    <main>
       {/* Hero Intro */}
       <section className="bg-neutral-900 py-24 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -128,7 +128,7 @@ export default function EventsPage() {
                   </div>
                   <div className="mt-12 flex flex-wrap gap-4">
                     {event.actions.map((action) => (
-                      <Link key={action.label} href={action.href} className="flex-1">
+                      <Link key={action.label} href={action.href} target={action.target} rel={action.target === '_blank' ? 'noopener noreferrer' : undefined} className="flex-1">
                         <Button className="w-full rounded-full py-6 text-base font-bold shadow-lg shadow-primary-600/10">
                           {action.label}
                         </Button>
@@ -202,7 +202,7 @@ export default function EventsPage() {
               Whether you want to participate, sponsor, collaborate, or simply learn more, our events offer a meaningful way to connect with the Be a Nelson Movement and the people shaping it.
             </Paragraph>
             <div className="pt-8 flex flex-col md:flex-row items-center justify-center gap-6">
-              <Link href="/donate">
+              <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-primary-600 hover:bg-primary-50 px-12 py-8 text-xl rounded-full border-none shadow-2xl w-full md:w-auto">
                   Fund the Movement
                 </Button>

@@ -43,29 +43,33 @@ const supportPossibilities = [
 
 export default function HomePage() {
   return (
-    <main className="overflow-hidden">
+    <main>
       {/* HERO SECTION */}
-      <section className="relative h-screen min-h-[750px] flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative min-h-screen pb-24 flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <div className="absolute inset-0 bg-neutral-900/60 z-10" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80 z-20" />
-          
-          <iframe 
-            src="https://www.youtube.com/embed/EaS3IOjNCfg?si=SGl4dfDZqST15IZ8&autoplay=1&mute=1&controls=0&loop=1&playlist=EaS3IOjNCfg&showinfo=0&rel=0&iv_load_policy=3" 
-            title="StreetBiz Foundation background story" 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            className="absolute top-1/2 left-1/2 w-[115%] h-[115%] -translate-x-1/2 -translate-y-1/2 scale-125 lg:scale-100 object-cover"
-          />
+          <div className="absolute inset-0 overflow-hidden">
+            <iframe 
+              width="1920"
+              height="1080"
+              src="https://www.youtube.com/embed/EaS3IOjNCfg?si=SGl4dfDZqST15IZ8&autoplay=1&mute=1&controls=0&loop=1&playlist=EaS3IOjNCfg&showinfo=0&rel=0&iv_load_policy=3&vq=hd1080&playsinline=1" 
+              title="StreetBiz Foundation background story" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen
+              className="absolute left-1/2 top-1/2 min-w-[800%] min-h-[800%] -translate-x-1/2 -translate-y-[50%] md:top-1/2 md:min-w-[115%] md:min-h-[115%] md:-translate-y-1/2"
+            />
+          </div>
         </div>
 
-        <div className="container relative z-30 text-center">
+        <div className="container relative z-30 text-center pt-16 sm:pt-20 lg:pt-28">
           <div className="max-w-7xl mx-auto space-y-10">
             <div className="space-y-4">
               <p className="text-primary-500 font-bold tracking-[0.3em] uppercase animate-fade-in drop-shadow-lg">
-                Be a Nelson 2026 Intake Now Open
+                StreetBiz Foundation
               </p>
-              <H1 className="text-white text-6xl md:text-8xl lg:text-9xl font-serif leading-tight drop-shadow-2xl">
+              <H1 className="text-white text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-serif leading-tight drop-shadow-2xl">
                 Be a Nelson <span className="italic text-primary-400">Movement</span>
               </H1>
               <Lead className="text-white text-2xl md:text-3xl font-medium max-w-5xl mx-auto drop-shadow-xl">
@@ -83,17 +87,17 @@ export default function HomePage() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-6">
               <Link href="/apply">
-                <Button size="lg" className="px-12 py-8 text-xl rounded-full shadow-2xl shadow-primary-600/20 bg-primary-500 hover:bg-primary-600 border-none">
+                <Button size="lg" className="px-8 py-5 sm:px-12 sm:py-8 text-lg sm:text-xl rounded-full shadow-2xl shadow-primary-600/20 bg-primary-500 hover:bg-primary-600 border-none">
                   Apply Now
                 </Button>
               </Link>
-              <Link href="/donate">
-                <Button size="lg" className="px-12 py-8 text-xl rounded-full shadow-2xl shadow-primary-600/20 bg-white text-primary-600 hover:bg-primary-50 border-none">
+              <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="px-8 py-5 sm:px-12 sm:py-8 text-lg sm:text-xl rounded-full shadow-2xl shadow-primary-600/20 bg-white text-primary-600 hover:bg-primary-50 border-none">
                   Fund the Movement
                 </Button>
               </Link>
               <Link href="/stories">
-                <Button variant="ghost" size="lg" className="text-white hover:bg-white/10 px-12 py-8 text-xl rounded-full border border-white/30 backdrop-blur-sm">
+                <Button variant="ghost" size="lg" className="text-white hover:bg-white/10 px-8 py-5 sm:px-12 sm:py-8 text-lg sm:text-xl rounded-full border border-white/30 backdrop-blur-sm">
                   View Our Impact
                 </Button>
               </Link>
@@ -107,7 +111,7 @@ export default function HomePage() {
         <div className="container">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <h2 className="text-white text-xl font-bold uppercase tracking-widest lg:w-1/4">Impact at a Glance</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:w-3/4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:w-3/4">
               {metrics.map((metric, index) => (
                 <div key={index} className="text-center lg:text-left border-l border-white/20 pl-6">
                   <p className="text-white text-sm font-medium leading-tight opacity-90">{metric.label}</p>
@@ -312,7 +316,7 @@ export default function HomePage() {
               Young people do not need more speeches about potential. They need access, support, and real opportunities to grow. Partner with us to expand the Be a Nelson Movement, deepen our impact, and help more young changemakers rise.
             </Paragraph>
             <div className="pt-8 flex flex-col md:flex-row items-center justify-center gap-6">
-              <Link href="/donate">
+              <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-primary-600 hover:bg-primary-50 px-12 py-8 text-xl rounded-full border-none shadow-2xl w-full md:w-auto">
                   Fund the Movement
                 </Button>

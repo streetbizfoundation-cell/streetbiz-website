@@ -41,7 +41,7 @@ export const metadata = {
 
 export default function ApplyPage() {
   return (
-    <main className="overflow-hidden">
+    <main>
       <section className="bg-neutral-900 py-24 md:py-32 text-white">
         <div className="container">
           <div className="max-w-5xl space-y-8">
