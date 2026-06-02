@@ -65,11 +65,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    min-height: 100%;
   }
 
   body {
     @apply bg-white text-neutral-900 antialiased;
     font-family: var(--font-sans);
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -83,14 +86,83 @@
     @apply mx-auto max-w-7xl px-6 lg:px-8;
   }
 
+  .bg-gradient-hero {
+    background-image: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-700));
+  }
+
+  .prose {
+    color: var(--color-neutral-700);
+    line-height: 1.85;
+  }
+
+  .prose > * + * {
+    margin-top: 1.35em;
+  }
+
+  .prose p {
+    color: var(--color-neutral-700);
+    line-height: 1.85;
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4 {
+    color: var(--color-neutral-900);
+    font-family: var(--font-serif);
+    line-height: 1.2;
+    margin-top: 1.8em;
+  }
+
+  .prose a {
+    color: var(--color-primary-600);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .prose ul,
+  .prose ol {
+    padding-left: 1.5rem;
+  }
+
+  .prose ul {
+    list-style: disc;
+  }
+
+  .prose ol {
+    list-style: decimal;
+  }
+
+  .prose blockquote {
+    border-left: 4px solid var(--color-primary-500);
+    color: var(--color-neutral-700);
+    font-family: var(--font-serif);
+    font-style: italic;
+    padding-left: 1rem;
+  }
+
+  .prose-lg {
+    font-size: 1.125rem;
+  }
+
   /* Cinematic Animations */
   @keyframes fade-in {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.82; transform: scale(1.03); }
+  }
+
   .animate-fade-in {
     animation: fade-in 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 3.5s ease-in-out infinite;
   }
 }
 

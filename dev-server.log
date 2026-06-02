@@ -2,10 +2,35 @@
 > streetbizfoundation@0.1.0 dev
 > next dev --port 3001
 
-▲ Next.js 16.2.6 (Turbopack)
-- Local:         http://localhost:3001
-- Network:       http://192.168.137.1:3001
-- Environments: .env
-✓ Ready in 697ms
-Creating turbopack project { dir: 'C:\\streetbizfoundation', testMode: true }
+   ▲ Next.js 15.5.18
+   - Local:        http://localhost:3001
+   - Network:      http://172.16.0.2:3001
+   - Environments: .env
 
+ ✓ Starting...
+ ✓ Ready in 5.2s
+ ○ Compiling / ...
+ ✓ Compiled / in 4.6s (657 modules)
+ GET / 200 in 6650ms
+ GET / 200 in 240ms
+ ✓ Compiled in 2.8s (264 modules)
+ ○ Compiling /apply ...
+ ✓ Compiled /apply in 1101ms (660 modules)
+ GET /apply 200 in 1912ms
+ ○ Compiling / ...
+ ✓ Compiled / in 839ms (407 modules)
+ GET / 200 in 2044ms
+ GET / 200 in 314ms
+ GET / 200 in 417ms
+ GET / 200 in 494ms
+ ✓ Compiled in 2.6s (671 modules)
+ ✓ Compiled in 1034ms (264 modules)
+ ✓ Compiled / in 452ms (407 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 3.3s (1004 modules)
+ GET / 500 in 11811ms
+ GET / 500 in 431ms
+ GET / 500 in 1170ms
+ GET / 500 in 446ms
+ ✓ Compiled in 3s (524 modules)
+ ✓ Compiled in 687ms (416 modules)

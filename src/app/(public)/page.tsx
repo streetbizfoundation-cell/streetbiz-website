@@ -82,7 +82,7 @@ export default function HomePage() {
             </Paragraph>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-6">
-              <Link href="/contact">
+              <Link href="/apply">
                 <Button size="lg" className="px-12 py-8 text-xl rounded-full shadow-2xl shadow-primary-600/20 bg-primary-500 hover:bg-primary-600 border-none">
                   Apply Now
                 </Button>
