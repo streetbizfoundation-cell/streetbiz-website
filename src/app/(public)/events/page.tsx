@@ -143,7 +143,7 @@ export default function EventsPage() {
                     </div>
                   </div>
                   <div className="mt-12 flex flex-wrap gap-4">
-                    {event.actions.map((action) => (
+                    {event.actions?.map((action) => (
                       <Link key={action.label} href={action.href} target={action.target} rel={action.target === '_blank' ? 'noopener noreferrer' : undefined} className="flex-1">
                         <Button className="w-full rounded-full py-6 text-base font-bold shadow-lg shadow-primary-600/10">
                           {action.label}
