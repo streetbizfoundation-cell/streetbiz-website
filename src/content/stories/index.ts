@@ -8,7 +8,6 @@ import { story as from_strangers_to_family } from './from-strangers-to-family'
 import { story as globe_nasa } from './globe-nasa'
 import { story as leading_change_for_sustainability } from './leading-change-for-sustainability'
 import { story as mandela_day_2025 } from './mandela-day-2025'
-import { story as soup_kitchen_nourishing_the_masses_meet_zimasa } from './soup-kitchen-nourishing-the-masses-meet-zimasa'
 
 export const stories = [
   from_ngobozana_to_the_world_a_journey_of_resilience_science_and_service,
@@ -20,6 +19,5 @@ export const stories = [
   from_strangers_to_family,
   globe_nasa,
   leading_change_for_sustainability,
-  mandela_day_2025,
-  soup_kitchen_nourishing_the_masses_meet_zimasa
+  mandela_day_2025
 ]

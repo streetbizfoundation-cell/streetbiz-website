@@ -63,7 +63,7 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto space-y-10">
             <div className="space-y-4">
               <p className="text-primary-500 font-bold tracking-[0.3em] uppercase animate-fade-in drop-shadow-lg">
-                StreetBiz Foundation
+                Be a Nelson 2026 Intake Now Open
               </p>
               <H1 className="text-white text-6xl md:text-8xl lg:text-9xl font-serif leading-tight drop-shadow-2xl">
                 Be a Nelson <span className="italic text-primary-400">Movement</span>
@@ -77,9 +77,18 @@ export default function HomePage() {
               The Be a Nelson Movement is the flagship initiative of StreetBiz Foundation — building a growing network of young changemakers inspired by Nelson Mandela’s legacy and equipped to create impact in their communities.
             </Paragraph>
 
+            <Paragraph className="text-white/90 max-w-4xl mx-auto text-base md:text-lg font-medium drop-shadow-md">
+              Coming 6–15 October 2026: the Be a Nelson Adventure Walk in South Africa, a 10-day Western Cape journey where adventure and impact move together.
+            </Paragraph>
+
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-6">
-              <Link href="/donate">
+              <Link href="/contact">
                 <Button size="lg" className="px-12 py-8 text-xl rounded-full shadow-2xl shadow-primary-600/20 bg-primary-500 hover:bg-primary-600 border-none">
+                  Apply Now
+                </Button>
+              </Link>
+              <Link href="/donate">
+                <Button size="lg" className="px-12 py-8 text-xl rounded-full shadow-2xl shadow-primary-600/20 bg-white text-primary-600 hover:bg-primary-50 border-none">
                   Fund the Movement
                 </Button>
               </Link>

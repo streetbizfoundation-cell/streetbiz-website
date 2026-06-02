@@ -3,7 +3,7 @@ import { Story } from '@/lib/types/content'
 export const story: Story = {
   id: 'mandela-day-2025',
   title: 'Mandela Day 2025: Empowering Waste Pickers, Building Communities',
-  slug: 'mandela-day-2025',
+  slug: 'mandela-day-2025-empowering-waste-pickers-building-communities',
   category: 'Community Action',
   excerpt: 'A reflection on StreetBiz Foundation’s Mandela Day 2025 activities, focusing on supporting waste pickers and fostering community resilience across South Africa.',
   content: `On Mandela Day 2025, StreetBiz Foundation continued its tradition of service by reaching out to one of the most hardworking yet overlooked groups in our society: waste pickers. Across several provinces, our team and the Be a Nelson movement members spent the day providing support, resources, and recognition to these vital environmental stewards.
@@ -16,6 +16,6 @@ Mandela Day is a reminder that we all have the power to make a difference. By fo
 
 As we reflect on the day, we are reminded of Nelson Mandela’s words: "It is in your hands to create a better world for all who live in it." StreetBiz Foundation remains committed to that vision, one person and one community at a time. Through continued partnership and a spirit of environmental care, we move closer to a truly circular and inclusive economy.`,
   featured_image: '/images/stories/mandela-day-2025.png',
-  publish_date: '2025-07-18T00:00:00.000Z',
+  publish_date: '2025-09-25T23:29:14.000Z',
   is_featured: false
 }

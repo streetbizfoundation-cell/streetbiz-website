@@ -5,7 +5,7 @@ export const story: Story = {
   title: 'From Ngobozana to the World: A Journey of Resilience, Science, and Service',
   slug: 'from-ngobozana-to-the-world-a-journey-of-resilience-science-and-service',
   category: 'Impact Story',
-  excerpt: 'A story of a young scientist from Ngobozana who is using her passion for science and service to change the world.',
+  excerpt: 'A young scientist from Ngobozana reflects on resilience, education, marathon running, chemistry, and service.',
   content: `In the small, rural village of Ngobozana, dreams often seemed as distant as the stars. But for one young woman, those stars were a constant source of inspiration and a reminder of the world that lay beyond the horizon. This is the story of a journey that began in the heart of the Eastern Cape and led to a life dedicated to science and service.
 
 Growing up in Ngobozana, life was simple but challenging. Resources were limited, and the path to higher education was often paved with obstacles. However, her curiosity and passion for learning were undeniable. She spent her afternoons reading whatever books she could find and her evenings gazing at the night sky, wondering about the mysteries of the universe.
@@ -22,6 +22,6 @@ One of her most impactful projects has been the implementation of a community-le
 
 Today, she is a respected scientist and a mentor to many young people. Her story is a powerful reminder that resilience, passion, and a commitment to service can overcome any obstacle. From the rural heartland of South Africa to the global stage, she continues to shine brightly, inspiring others to follow their dreams and use their talents for the greater good.`,
   featured_image: '/images/stories/from-ngobozana-to-the-world-a-journey-of-resilience-science-and-service.png',
-  publish_date: '2025-02-10T11:00:00.000Z',
+  publish_date: '2025-09-26T00:10:32.000Z',
   is_featured: false
 }

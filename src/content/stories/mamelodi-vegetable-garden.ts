@@ -2,10 +2,10 @@ import { Story } from '@/lib/types/content'
 
 export const story: Story = {
   id: 'mamelodi-vegetable-garden',
-  title: 'Mamelodi Vegetable Garden',
+  title: 'Soup Kitchen, Nourishing the Masses: Meet Zimasa',
   slug: 'mamelodi-vegetable-garden',
   category: 'Community Action',
-  excerpt: 'How a local vegetable garden in Mamelodi is fostering food security and community pride through collective action.',
+  excerpt: 'Zimasa shares how a childhood memory of compassion grew into a soup kitchen, community garden, and practical care for people in need.',
   content: `In the heart of Mamelodi, a vibrant green space is flourishing, providing more than just nourishment for the body. The Mamelodi Vegetable Garden is a testament to the power of community action and the transformative potential of collective effort. What began as a neglected patch of land has become a thriving hub for sustainability, education, and community pride.
 
 The project was born out of a shared concern for food security and a desire to create a positive space for local residents. A group of passionate community members, supported by the StreetBiz Foundation, came together with a simple vision: to turn an eyesore into an asset. They cleared the debris, tilled the soil, and began planting a variety of vegetables and herbs.
@@ -22,6 +22,6 @@ Through its involvement with the "Be a Nelson" movement, the Mamelodi Vegetable 
 
 As the garden continues to grow and flourish, it remains a powerful reminder of the resilience and creativity of the people of Mamelodi. It is a place of hope, a place of connection, and a place where the seeds of a better future are being sown every day.`,
   featured_image: '/images/stories/mamelodi-vegetable-garden.jpg',
-  publish_date: '2025-06-10T12:00:00.000Z',
+  publish_date: '2024-11-17T17:43:13.000Z',
   is_featured: false
 }

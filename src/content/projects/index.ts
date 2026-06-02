@@ -44,12 +44,12 @@ export const projects: Project[] = [
     id: 'be-a-nelson-walk',
     title: 'Be a Nelson Walk',
     slug: 'be-a-nelson-walk',
-    description: 'An experiential leadership journey through the Karoo, fostering resilience, storytelling, and community connection.',
+    description: 'A transformational South Africa adventure walk that combines experience, education, exposure, and connection with the Be a Nelson Movement.',
     objectives: [
-      'Leadership through experience',
+      'Adventure with a difference',
       'Intercultural dialogue',
       'Personal development',
-      'Community engagement'
+      'Community engagement with Nelson changemakers'
     ],
     image_url: '/images/stories/from-richmonds-desert-to-konke.jpg'
   },
@@ -67,16 +67,16 @@ export const projects: Project[] = [
     image_url: '/images/partners/dolphin.png'
   },
   {
-    id: 'awmcb-waste-management',
-    title: 'Access to Waste Management Capacity Building (AWMCB)',
-    slug: 'awmcb-waste-management',
-    description: 'A community-led project focused on sustainable waste management, recycling, and environmental safety, born out of the sustainability leadership course.',
+    id: 'be-a-nelson-pitch-competition',
+    title: 'Be A Nelson Pitch Competition',
+    slug: 'be-a-nelson-pitch-competition',
+    description: 'A platform for Nelsons and community innovators to pitch practical social-impact ideas, receive feedback, and access support for community-led projects.',
     objectives: [
-      'Circular economy implementation',
-      'Community waste collection systems',
-      'Environmental safety training',
-      'Sustainability leadership'
+      'Community innovation',
+      'Project pitching and feedback',
+      'Practical entrepreneurship support',
+      'Seed funding opportunities'
     ],
-    image_url: '/images/stories/mandela-day-2025.png'
+    image_url: '/images/projects/be-a-nelson-pitch-competition.jpeg'
   }
 ]
