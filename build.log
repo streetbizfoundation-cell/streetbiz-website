@@ -1,0 +1,285 @@
+
+> streetbizfoundation@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.2.6 (Turbopack)
+
+ΓÜá The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 14 errors:
+./src/app/(admin)/layout.tsx:2:1
+Module not found: Can't resolve '@/components/common/Button'
+  1 | import Link from 'next/link'
+> 2 | import { Button } from '@/components/common/Button'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { cn } from '@/lib/utils/cn'
+  4 |
+  5 | interface AdminLayoutProps {
+
+Import map: aliased to relative './components/common/Button' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/(public)/page.tsx:2:1
+Module not found: Can't resolve '@/components/common/Button'
+  1 | import { H1, H2, Paragraph, Lead } from '@/components/common/Typography'
+> 2 | import { Button } from '@/components/common/Button'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './components/common/Button' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/admin/login/page.tsx:7:1
+Module not found: Can't resolve '@/components/common/Button'
+   5 | import { signIn } from 'next-auth/react'
+   6 | import { H1, Paragraph } from '@/components/common/Typography'
+>  7 | import { Button } from '@/components/common/Button'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Input } from '@/components/common/Input'
+   9 | import { Card, CardBody } from '@/components/common/Card'
+  10 |
+
+Import map: aliased to relative './components/common/Button' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/login/page.tsx [Client Component Browser]
+    ./src/app/admin/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/login/page.tsx [Client Component SSR]
+    ./src/app/admin/login/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/(admin)/dashboard/page.tsx:2:1
+Module not found: Can't resolve '@/components/common/Card'
+  1 | import { H1, H2, Paragraph } from '@/components/common/Typography'
+> 2 | import { Card, CardBody, CardHeader } from '@/components/common/Card'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Dashboard() {
+  5 |   return (
+
+Import map: aliased to relative './components/common/Card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/admin/login/page.tsx:9:1
+Module not found: Can't resolve '@/components/common/Card'
+   7 | import { Button } from '@/components/common/Button'
+   8 | import { Input } from '@/components/common/Input'
+>  9 | import { Card, CardBody } from '@/components/common/Card'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |
+  11 | export default function LoginPage() {
+  12 |   const router = useRouter()
+
+Import map: aliased to relative './components/common/Card' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/login/page.tsx [Client Component Browser]
+    ./src/app/admin/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/login/page.tsx [Client Component SSR]
+    ./src/app/admin/login/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/(public)/layout.tsx:2:1
+Module not found: Can't resolve '@/components/common/Footer'
+  1 | import { Header } from '@/components/common/Header'
+> 2 | import { Footer } from '@/components/common/Footer'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function PublicLayout({
+  5 |   children,
+
+Import map: aliased to relative './components/common/Footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/(public)/layout.tsx:1:1
+Module not found: Can't resolve '@/components/common/Header'
+> 1 | import { Header } from '@/components/common/Header'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { Footer } from '@/components/common/Footer'
+  3 |
+  4 | export default function PublicLayout({
+
+Import map: aliased to relative './components/common/Header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/admin/login/page.tsx:8:1
+Module not found: Can't resolve '@/components/common/Input'
+   6 | import { H1, Paragraph } from '@/components/common/Typography'
+   7 | import { Button } from '@/components/common/Button'
+>  8 | import { Input } from '@/components/common/Input'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { Card, CardBody } from '@/components/common/Card'
+  10 |
+  11 | export default function LoginPage() {
+
+Import map: aliased to relative './components/common/Input' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/login/page.tsx [Client Component Browser]
+    ./src/app/admin/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/login/page.tsx [Client Component SSR]
+    ./src/app/admin/login/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/(admin)/dashboard/page.tsx:1:1
+Module not found: Can't resolve '@/components/common/Typography'
+> 1 | import { H1, H2, Paragraph } from '@/components/common/Typography'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { Card, CardBody, CardHeader } from '@/components/common/Card'
+  3 |
+  4 | export default function Dashboard() {
+
+Import map: aliased to relative './components/common/Typography' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/(public)/page.tsx:1:1
+Module not found: Can't resolve '@/components/common/Typography'
+> 1 | import { H1, H2, Paragraph, Lead } from '@/components/common/Typography'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { Button } from '@/components/common/Button'
+  3 |
+  4 | export default function Home() {
+
+Import map: aliased to relative './components/common/Typography' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/admin/login/page.tsx:6:1
+Module not found: Can't resolve '@/components/common/Typography'
+  4 | import { useRouter } from 'next/navigation'
+  5 | import { signIn } from 'next-auth/react'
+> 6 | import { H1, Paragraph } from '@/components/common/Typography'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { Button } from '@/components/common/Button'
+  8 | import { Input } from '@/components/common/Input'
+  9 | import { Card, CardBody } from '@/components/common/Card'
+
+Import map: aliased to relative './components/common/Typography' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/login/page.tsx [Client Component Browser]
+    ./src/app/admin/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/login/page.tsx [Client Component SSR]
+    ./src/app/admin/login/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/api/auth/[...nextauth]/route.ts:1:1
+Module not found: Can't resolve '@/lib/auth/auth'
+> 1 | import { handlers } from '@/lib/auth/auth'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const { GET, POST } = handlers
+  4 |
+
+Import map: aliased to relative './lib/auth/auth' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/middleware.ts:1:1
+Module not found: Can't resolve '@/lib/auth/auth'
+> 1 | import { auth } from '@/lib/auth/auth'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | // Protect admin routes
+  4 | export const middleware = auth((req) => {
+
+Import map: aliased to relative './lib/auth/auth' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/layout.tsx:3:1
+Module not found: Can't resolve '@/styles/globals.css'
+  1 | import type { Metadata } from 'next'
+  2 | import { SessionProvider } from 'next-auth/react'
+> 3 | import '@/styles/globals.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const metadata: Metadata = {
+  6 |   title: 'StreetBiz Foundation - The Be a Nelson Movement',
+
+Import map: aliased to relative './styles/globals.css' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./src/app/(admin)/layout.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/(public)/page.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/admin/login/page.tsx:7:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/(admin)/dashboard/page.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/admin/login/page.tsx:9:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/(public)/layout.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/(public)/layout.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/admin/login/page.tsx:8:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/(admin)/dashboard/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/(public)/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/admin/login/page.tsx:6:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/api/auth/[...nextauth]/route.ts:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/middleware.ts:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/layout.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)

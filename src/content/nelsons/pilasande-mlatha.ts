@@ -1,0 +1,13 @@
+import { Nelson } from '@/lib/types/content'
+
+export const nelson: Nelson = {
+  "id": "static-pilasande-mlatha",
+  "name": "Pilasande Mlatha",
+  "slug": "pilasande-mlatha",
+  "location": "Eastern Cape, South Africa",
+  "short_description": "An Eastern Cape-based Be a Nelson changemaker committed to community impact.",
+  "bio": "A member of the Be a Nelson Movement, part of a growing network of grassroots changemakers using social entrepreneurship, education, experience, and exposure to serve their communities.",
+  "image_url": "/images/nelsons/pilasande-mlatha.png",
+  "join_date": "2024-11-01T00:00:00.000Z"
+}
+

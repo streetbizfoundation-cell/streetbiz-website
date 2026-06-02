@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #fffaf0;
+  --color-primary-100: #ffefd5;
+  --color-primary-200: #ffdab3;
+  --color-primary-300: #ffc589;
+  --color-primary-400: #ffb35f;
+  --color-primary-500: #ff9d35;
+  --color-primary-600: #e88c2a;
+  --color-primary-700: #d17a1f;
+  --color-primary-800: #b96814;
+  --color-primary-900: #a1560a;
+
+  --color-secondary-50: #f0f9ff;
+  --color-secondary-100: #e0f2fe;
+  --color-secondary-200: #bae6fd;
+  --color-secondary-300: #7dd3fc;
+  --color-secondary-400: #38bdf8;
+  --color-secondary-500: #0ea5e9;
+  --color-secondary-600: #0284c7;
+  --color-secondary-700: #0369a1;
+  --color-secondary-800: #075985;
+  --color-secondary-900: #0c3d66;
+
+  --color-neutral-50: #fafaf9;
+  --color-neutral-100: #f5f5f4;
+  --color-neutral-200: #e7e5e4;
+  --color-neutral-300: #d6d3d1;
+  --color-neutral-400: #a8a29e;
+  --color-neutral-500: #78716b;
+  --color-neutral-600: #57534e;
+  --color-neutral-700: #44403c;
+  --color-neutral-800: #292524;
+  --color-neutral-900: #1c1917;
+
+  --color-error-50: #fef2f2;
+  --color-error-500: #ef4444;
+  --color-error-700: #b91c1c;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-serif: 'Playfair Display', 'Merriweather', serif;
+
+  --font-size-h1: 3.5rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.5rem;
+  --font-size-h5: 1.25rem;
+  --font-size-h6: 1rem;
+  --font-size-body-lg: 1.125rem;
+  --font-size-body-sm: 0.875rem;
+
+  --shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-hero: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-base: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-2xl: 3rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-neutral-900 antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-7xl px-6 lg:px-8;
+  }
+
+  /* Cinematic Animations */
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
