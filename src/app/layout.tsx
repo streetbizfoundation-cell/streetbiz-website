@@ -2,14 +2,11 @@ import type { Metadata } from 'next'
 import '@/styles/globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://streetbizfoundation.org'),
   title: 'StreetBiz Foundation - The Be a Nelson Movement',
   description:
     'Real stories of transformation. Supporting the Be a Nelson Movement to create lasting change in lives and communities.',
   keywords: ['nonprofit', 'transformation', 'community', 'impact', 'stories'],
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -31,6 +28,11 @@ export const metadata: Metadata = {
     description: 'The Be a Nelson Movement',
     images: ['/og-image.png'],
   },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
