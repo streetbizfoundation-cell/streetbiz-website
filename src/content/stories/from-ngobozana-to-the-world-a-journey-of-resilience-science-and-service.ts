@@ -6,22 +6,25 @@ export const story: Story = {
   slug: 'from-ngobozana-to-the-world-a-journey-of-resilience-science-and-service',
   category: 'Impact Story',
   excerpt: 'A young scientist from Ngobozana reflects on resilience, education, marathon running, chemistry, and service.',
-  content: `In the small, rural village of Ngobozana, dreams often seemed as distant as the stars. But for one young woman, those stars were a constant source of inspiration and a reminder of the world that lay beyond the horizon. This is the story of a journey that began in the heart of the Eastern Cape and led to a life dedicated to science and service.
+  content: `I come from Ngobozana, a small village in Lusikisiki, Eastern Cape—a place where resilience is woven into daily life. Raised by my grandmother, I learned perseverance, humility, and the belief that education is not only a personal achievement but a pathway for others as well. Being the first in my family to pass matric and attend university carried both ambition and responsibility.
 
-Growing up in Ngobozana, life was simple but challenging. Resources were limited, and the path to higher education was often paved with obstacles. However, her curiosity and passion for learning were undeniable. She spent her afternoons reading whatever books she could find and her evenings gazing at the night sky, wondering about the mysteries of the universe.
+When my grandmother passed away in 2023, I turned to running to process my grief. What began as a way to cope soon became a passion. Marathons taught me lessons that reach far beyond the road: progress is about endurance, discipline, and the strength of community. These same lessons have guided me in science, where persistence and collaboration are as important as discovery.
 
-Her breakthrough came when she was selected for a scholarship program that allowed her to pursue a degree in science. It was a daunting transition, moving from a close-knit rural community to the fast-paced environment of a city university. But she carried the lessons of resilience and hard work that she had learned in Ngobozana with her.
+Today, I am pursuing a Master’s degree in Chemistry at the Durban University of Technology. My studies have taken me from Durban to Valladolid and Groningen, each place shaping my understanding of science as both a global language and a tool for change. Along the way, I have worked as a teaching assistant, laboratory demonstrator, mentor, and intern at Technology Transfer and Innovation.
 
-During her time at university, she excelled in her studies, eventually specializing in environmental science. But she never forgot her roots. She spent her holidays back in Ngobozana, teaching science to local schoolchildren and encouraging them to dream big. She saw the potential in every child she met and wanted to provide them with the same opportunities she had been given.
+Each of these roles offered more than technical experience; they gave me moments of impact. In Lusikisiki, I witnessed the joy of Grade 7 learners when a difficult concept finally clicked, teaching me patience and the value of accessible education. At TTI, I saw how research can leave the lab and transform industries and livelihoods. These experiences deepened my conviction that science is not only about knowledge but about service to society.
 
-Her commitment to service led her to the StreetBiz Foundation and the "Be a Nelson" movement. Here, she found a community of like-minded individuals who shared her vision for a better world. She began using her scientific knowledge to address some of the challenges facing rural communities, such as access to clean water and sustainable energy solutions.
+That conviction grew when I joined the Street Biz Foundation’s Be A Nelson movement. Weekly sessions with diverse voices across continents became a living classroom of empathy and leadership. I learned that leadership is less about titles and more about creating space for others and stepping forward with courage. Through our sustainability project with the Open University, I came to appreciate the importance of listening to every voice and leading in ways that uplift.
 
-One of her most impactful projects has been the implementation of a community-led water purification system in Ngobozana. By combining traditional knowledge with modern scientific techniques, she was able to create a sustainable solution that has significantly improved the health and well-being of the village residents.
+Inspired by these lessons, I started my pay-it-forward project in 2022 to help students from disadvantaged backgrounds in Lusikisiki apply to universities and support them through the transition. Seeing one of my mentees become the first in their family to register at university was a powerful reminder that leadership is measured not by how far I rise but by how many people I bring with me.
 
-"Science is not just about understanding the world," she says. "It's about using that understanding to serve others and create positive change. My journey from Ngobozana has taught me that no matter where you come from, you have the power to make a difference."
+Even while studying abroad, I have carried this spirit with me. Meeting fellow Be A Nelson members overseas reminded me that the movement is not bound by geography. It is a mindset, a community, and a vision that stretches across borders.
 
-Today, she is a respected scientist and a mentor to many young people. Her story is a powerful reminder that resilience, passion, and a commitment to service can overcome any obstacle. From the rural heartland of South Africa to the global stage, she continues to shine brightly, inspiring others to follow their dreams and use their talents for the greater good.`,
+Looking forward, I intend to carry these lessons into every space I enter. Whether I am in the lab working on synthesis, mentoring future students, or collaborating internationally, I remain committed to science as service. For me, sustainability is not only about protecting the planet but also about sustaining people, potential, and purpose.
+
+From the quiet hills of Ngobozana to international classrooms, my journey has been shaped by resilience, community, and a deep sense of service. Being a Nelson is not just something I did—it is who I am becoming.`,
   featured_image: '/images/stories/from-ngobozana-to-the-world-a-journey-of-resilience-science-and-service.png',
   publish_date: '2025-09-26T00:10:32.000Z',
-  is_featured: false
+  is_featured: false,
+  nelson_slug: 'pilasande-mlatha'
 }

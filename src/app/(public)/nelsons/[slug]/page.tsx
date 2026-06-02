@@ -17,6 +17,7 @@ interface RelatedStory {
   title: string
   slug: string
   excerpt: string | null
+  content: string
   featured_image: string | null
   publish_date: string | null
 }
@@ -52,6 +53,9 @@ export default async function NelsonProfilePage({ params }: NelsonProfilePagePro
   if (!profile) {
     notFound()
   }
+
+  const storyHighlight = profile.stories && profile.stories.length > 0 ? profile.stories[0] : null
+  const storyHighlightText = storyHighlight ? storyHighlight.content.split(/\n\s*\n/)[0] : null
 
   return (
     <main className="bg-white">
@@ -102,6 +106,19 @@ export default async function NelsonProfilePage({ params }: NelsonProfilePagePro
                   <Paragraph>Biography coming soon...</Paragraph>
                 )}
               </div>
+
+              {storyHighlight && storyHighlightText && (
+                <div className="mt-16 rounded-3xl bg-primary-50 border border-primary-100 p-10">
+                  <p className="text-sm font-bold uppercase tracking-[0.3em] text-primary-600">Story Highlight</p>
+                  <h3 className="mt-4 text-3xl font-serif text-neutral-900">{storyHighlight.title}</h3>
+                  <p className="mt-4 text-lg leading-relaxed text-neutral-700">
+                    {storyHighlightText}
+                  </p>
+                  <Link href={`/stories/${storyHighlight.slug}`} className="mt-6 inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 transition-colors">
+                    Read the full story →
+                  </Link>
+                </div>
+              )}
             </div>
             
             <div className="lg:col-span-4">
