@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       'Real stories of transformation. Supporting the Be a Nelson Movement to create lasting change.',
     images: [
       {
-        url: 'https://streetbizfoundation.org/og-image.png',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
       },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'StreetBiz Foundation',
     description: 'The Be a Nelson Movement',
-    images: ['https://streetbizfoundation.org/og-image.png'],
+    images: ['/og-image.png'],
   },
 }
 
