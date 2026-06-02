@@ -3,7 +3,23 @@ import { H1, H2, H3, Lead, Paragraph } from '@/components/common/Typography'
 import { Button } from '@/components/common/Button'
 import { Calendar, MapPin, History } from 'lucide-react'
 
-const upcomingEvents = [
+type EventAction = {
+  label: string
+  href: string
+  target?: string
+}
+
+type EventItem = {
+  title: string
+  date: string
+  location?: string
+  description: string
+  subtext?: string
+  actions?: EventAction[]
+  outcome?: string
+}
+
+const upcomingEvents: EventItem[] = [
   {
     title: 'Be a Nelson Conference 2026',
     date: '13–17 July 2026',
@@ -27,7 +43,7 @@ const upcomingEvents = [
   },
 ]
 
-const pastEvents = [
+const pastEvents: EventItem[] = [
   {
     title: 'Be a Nelson Pitch Competition',
     date: 'June 16, 2025',
