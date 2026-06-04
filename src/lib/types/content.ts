@@ -46,5 +46,7 @@ export interface Partner {
   name: string
   logo_url: string
   website_url?: string | null
+  excerpt?: string
+  description?: string
   order_index: number
 }

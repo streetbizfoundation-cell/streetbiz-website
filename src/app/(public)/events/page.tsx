@@ -27,7 +27,7 @@ const upcomingEvents: EventItem[] = [
     description: 'The Be a Nelson Conference brings Nelsons together from across provinces for leadership development, connection, and shared learning. It is a key gathering in the movement calendar and creates space for growth, collaboration, and strengthening the future of the movement.',
     actions: [
       { label: 'Enquire About the Conference', href: '/contact' },
-      { label: 'Sponsor the Conference', href: 'https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3', target: '_blank' },
+      { label: 'Sponsor the Conference', href: 'https://www.paypal.com/donate/?hosted_button_id=ZDJE4AWUAZV7Y', target: '_blank' },
     ],
   },
   {
@@ -218,7 +218,7 @@ export default function EventsPage() {
               Whether you want to participate, sponsor, collaborate, or simply learn more, our events offer a meaningful way to connect with the Be a Nelson Movement and the people shaping it.
             </Paragraph>
             <div className="pt-8 flex flex-col md:flex-row items-center justify-center gap-6">
-              <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.paypal.com/donate/?hosted_button_id=ZDJE4AWUAZV7Y" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-primary-600 hover:bg-primary-50 px-12 py-8 text-xl rounded-full border-none shadow-2xl w-full md:w-auto">
                   Fund the Movement
                 </Button>

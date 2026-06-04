@@ -7,7 +7,7 @@ const metrics = [
   { label: '120 Nelsons impacted to date', value: '120' },
   { label: '100+ township communities reached', value: '100+' },
   { label: '200 high schools engaged', value: '200' },
-  { label: '20 changemakers in current cohort', value: '20' },
+  { label: '73 participants across all course cohorts', value: '73' },
   { label: '6 provinces represented', value: '6' },
 ]
 
@@ -82,6 +82,9 @@ export default function HomePage() {
             </Paragraph>
 
             <Paragraph className="text-white/90 max-w-4xl mx-auto text-base md:text-lg font-medium drop-shadow-md">
+              Coming 14–15 July 2026 at Ganzekraal Coastal Resort, Western Cape: the Be a Nelson Conference brings together young leaders, changemakers, and community builders for two days of learning, connection, and action.
+            </Paragraph>
+            <Paragraph className="text-white/90 max-w-4xl mx-auto text-base md:text-lg font-medium drop-shadow-md">
               Coming 6–15 October 2026: the Be a Nelson Adventure Walk in South Africa, a 10-day Western Cape journey where adventure and impact move together.
             </Paragraph>
 
@@ -91,7 +94,7 @@ export default function HomePage() {
                   Apply Now
                 </Button>
               </Link>
-              <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.paypal.com/donate/?hosted_button_id=ZDJE4AWUAZV7Y" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="px-8 py-5 sm:px-12 sm:py-8 text-lg sm:text-xl rounded-full shadow-2xl shadow-primary-600/20 bg-white text-primary-600 hover:bg-primary-50 border-none">
                   Fund the Movement
                 </Button>
@@ -294,13 +297,36 @@ export default function HomePage() {
             </div>
             <div className="space-y-8 text-xl text-neutral-600 leading-relaxed">
               <p>
-                The Be a Nelson Movement offers donors, partners, and collaborators a meaningful opportunity to invest in youth development that is practical, relational, and deeply rooted in local realities.
-              </p>
-              <p className="font-bold text-neutral-900">
-                This is not a one-size-fits-all intervention. It is a movement designed to unlock confidence, agency, and action through education, experience, and exposure.
+                When you partner with <strong>StreetBiz Foundation</strong>, you invest in a movement that is practical, grounded, and ready to grow. Through the <strong>Be a Nelson Movement</strong>, we support young changemakers with access to learning, leadership development, mentorship, and real-world opportunities that strengthen communities from the ground up.
               </p>
               <p>
-                By partnering with StreetBiz Foundation, you help expand a model that equips young people not only to dream differently, but to build differently.
+                We also understand that strong partnerships require trust, accountability, and the right compliance structures in place.
+              </p>
+              <p className="font-bold text-neutral-900">
+                <strong>StreetBiz Foundation holds a Section 18A certificate and is Public Benefit Organisation (PBO) compliant</strong>, enabling qualifying South African donors and companies to structure donations for tax benefit where applicable.
+              </p>
+              <p>
+                For international partners, we also work with trusted nonprofit partners through formal Memorandums of Understanding to help facilitate giving where tax-efficient structures may be needed.
+              </p>
+              <ul className="list-disc list-inside space-y-3 text-neutral-600">
+                <li>
+                  <strong>For U.S.-based companies and donors:</strong> we can provide details of our partner organisation(s) that can assist where <strong>501(c)(3)</strong> giving mechanisms are required.
+                </li>
+                <li>
+                  <strong>For European companies and donors:</strong> where a tax certificate is needed, we can provide details of a nonprofit organisation with whom we have a <strong>Memorandum of Understanding</strong>.
+                </li>
+              </ul>
+              <p className="font-medium text-neutral-900">
+                This means partners can support the movement with greater confidence, clarity, and alignment to their own giving and compliance requirements.
+              </p>
+            </div>
+            <div className="mt-10 rounded-3xl border border-primary-200 bg-primary-50 px-8 py-8 text-center">
+              <p className="text-sm uppercase tracking-[0.3em] font-bold text-primary-600 mb-4">Funding-ready and partnership-ready</p>
+              <p className="text-lg font-semibold text-neutral-900">
+                Section 18A certified | PBO compliant | International partnership pathways available for U.S. and European donors*
+              </p>
+              <p className="mt-4 text-sm text-neutral-600 italic">
+                *Details shared on request, including relevant partner organisations and giving pathways.
               </p>
             </div>
           </div>
@@ -316,7 +342,7 @@ export default function HomePage() {
               Young people do not need more speeches about potential. They need access, support, and real opportunities to grow. Partner with us to expand the Be a Nelson Movement, deepen our impact, and help more young changemakers rise.
             </Paragraph>
             <div className="pt-8 flex flex-col md:flex-row items-center justify-center gap-6">
-              <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.paypal.com/donate/?hosted_button_id=ZDJE4AWUAZV7Y" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-primary-600 hover:bg-primary-50 px-12 py-8 text-xl rounded-full border-none shadow-2xl w-full md:w-auto">
                   Fund the Movement
                 </Button>

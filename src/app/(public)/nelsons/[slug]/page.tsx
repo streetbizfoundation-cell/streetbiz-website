@@ -128,7 +128,7 @@ export default async function NelsonProfilePage({ params }: NelsonProfilePagePro
                   <p className="text-neutral-600 mb-6 text-sm leading-relaxed">
                     By donating, you contribute directly to the resources and support systems that empower {profile.name.split(' ')[0]} and others in the movement.
                   </p>
-                  <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Link href="https://www.paypal.com/donate/?hosted_button_id=ZDJE4AWUAZV7Y" target="_blank" rel="noopener noreferrer" className="w-full">
                     <Button className="w-full py-6 text-lg rounded-full">
                       Donate in Honor of {profile.name.split(' ')[0]}
                     </Button>

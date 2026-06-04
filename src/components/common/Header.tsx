@@ -53,7 +53,7 @@ export function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-4">
-            <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer" className="hidden md:block">
+            <Link href="https://www.paypal.com/donate/?hosted_button_id=ZDJE4AWUAZV7Y" target="_blank" rel="noopener noreferrer" className="hidden md:block">
               <Button size="md">
                 Donate
               </Button>
@@ -87,7 +87,7 @@ export function Header() {
               </Link>
             ))}
             <div className="pt-2 border-t border-neutral-200">
-              <Link href="https://www.paypal.com/donate?token=KHVFspueG9Wd2H7b8oGa9jSZlB1n5-7gwRidwVCHKq4uLu4dy3tqf0fw9SUDctSwIKAA_aIl1-CmnVM3" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
+              <Link href="https://www.paypal.com/donate/?hosted_button_id=ZDJE4AWUAZV7Y" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
                 <Button className="w-full">
                   Donate
                 </Button>
