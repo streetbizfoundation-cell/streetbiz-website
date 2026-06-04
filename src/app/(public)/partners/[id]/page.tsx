@@ -4,12 +4,13 @@ import { ExternalLink } from 'lucide-react'
 import { partners } from '@/content/partners'
 import { H2, Paragraph } from '@/components/common/Typography'
 
-type Props = {
-  params: { id: string }
+type PartnerPageProps = {
+  params: Promise<{ id: string }>
 }
 
-export default function PartnerDetail({ params }: Props) {
-  const partner = partners.find((p) => p.id === params.id)
+export default async function PartnerDetail({ params }: PartnerPageProps) {
+  const { id } = await params
+  const partner = partners.find((p) => p.id === id)
   if (!partner) return <div className="p-12">Partner not found.</div>
 
   return (
