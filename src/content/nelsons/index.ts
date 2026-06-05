@@ -14,7 +14,7 @@ import { nelson as bifale_kalonda } from './bifale-kalonda'
 import { nelson as martha_masipa } from './martha-masipa'
 import { nelson as enetani_chauke } from './enetani-chauke'
 import { nelson as mahlatse_madisha } from './mahlatse-madisha'
-import { nelson as zimasa_mretanya } from './zimasa-mretanya'
+import { nelson as zimasa_mretyana } from './zimasa-mretyana'
 import { nelson as tshwarelo_mkhabela } from './tshwarelo-mkhabela'
 import { nelson as john_semenya } from './john-semenya'
 import { nelson as nonkululeko_nzama } from './nonkululeko-nzama'
@@ -56,7 +56,7 @@ export const nelsons = [
   martha_masipa,
   enetani_chauke,
   mahlatse_madisha,
-  zimasa_mretanya,
+  zimasa_mretyana,
   tshwarelo_mkhabela,
   john_semenya,
   nonkululeko_nzama,

@@ -4,7 +4,7 @@ export const story: Story = {
   id: 'leading-change-for-sustainability',
   title: 'Leading Change for Sustainability: Intrapreneurship in Action',
   slug: 'leading-change-for-sustainability',
-  category: 'Impact Story',
+  category: 'Project Spotlight',
   excerpt: 'A story of how young South African changemakers are leading the way in sustainability and intrapreneurship, creating positive impact in their organizations and communities.',
   content: `In the heart of South Africa, a new generation of leaders is emerging. These are the changemakers who are not just waiting for the future to happen, but are actively shaping it through sustainability and intrapreneurship.
 

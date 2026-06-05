@@ -4,7 +4,7 @@ export const story: Story = {
   id: 'from-the-streets-to-dreams-a-journey-of-perseverance-and-purpose',
   title: 'From Streets to Dreams: Meet Thuso',
   slug: 'from-the-streets-to-dreams-a-journey-of-perseverance-and-purpose',
-  category: 'Impact Story',
+  category: 'Nelson Stories',
   excerpt: 'Thuso Pejane shares a journey from Rockville, Soweto to Stellenbosch, driven by education, football, and the will to build a future.',
   content: `My name is Thuso Pejane from Rockville (Soweto), south of Johannesburg. A place where having enough to eat was never a guarantee. I was raised by a single mother who was a domestic worker. I knew that education was the only ticket out of this cycle of struggle, that is why my family was so proud when I completed my diploma in Accounting and Estate administration back home. Football gave me hope, happiness and for a short moment I also thought of pursing it to a professional level. Studies and football were the only hope to drive me out of the hardship also to improve the standard of living at home.
 

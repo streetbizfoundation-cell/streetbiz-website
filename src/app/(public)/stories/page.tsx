@@ -1,15 +1,34 @@
+'use client'
+
+import { useMemo, useState } from 'react'
 import { H1, Lead } from '@/components/common/Typography'
 import { StoryCard } from '@/components/sections/StoryCard'
 import { stories as staticStories } from '@/content/stories'
 import { findNelson } from '@/content/utils'
 
-export const metadata = {
-  title: 'Movement Stories | StreetBiz Foundation',
-  description: 'Documentary-style stories of transformation, resilience, and community impact from the Be a Nelson movement.',
-}
-
 export default function StoriesPage() {
-  const visibleStories = staticStories
+  const [selectedFilter, setSelectedFilter] = useState('All')
+
+  const filterOptions = useMemo(() => {
+    const categories = Array.from(new Set(
+      staticStories
+        .map((story) => story.category)
+        .filter((cat): cat is NonNullable<typeof cat> => Boolean(cat) && cat !== 'Nelson Stories')
+    )).sort()
+    return ['All', 'Nelson Stories', ...categories]
+  }, [])
+
+  const visibleStories = useMemo(() => {
+    if (selectedFilter === 'All') {
+      return staticStories
+    }
+
+    if (selectedFilter === 'Nelson Stories') {
+      return staticStories.filter((story) => Boolean(story.nelson_slug))
+    }
+
+    return staticStories.filter((story) => story.category === selectedFilter)
+  }, [selectedFilter])
 
   return (
     <main className="bg-white">
@@ -29,6 +48,31 @@ export default function StoriesPage() {
       {/* Stories Feed */}
       <section className="py-20 md:py-32">
         <div className="container">
+          <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div>
+              <p className="text-sm uppercase tracking-[0.3em] text-neutral-500 mb-2">Filter stories</p>
+              <div className="flex flex-wrap gap-3">
+                {filterOptions.map((filter) => (
+                  <button
+                    key={filter}
+                    type="button"
+                    onClick={() => setSelectedFilter(filter)}
+                    className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
+                      selectedFilter === filter
+                        ? 'bg-primary-600 text-white border-primary-600'
+                        : 'bg-white text-neutral-700 border-neutral-200 hover:bg-neutral-100'
+                    }`}
+                  >
+                    {filter}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="text-sm text-neutral-500">
+              Showing {visibleStories.length} {visibleStories.length === 1 ? 'story' : 'stories'}
+            </div>
+          </div>
+
           {visibleStories.length === 0 ? (
             <div className="text-center py-20">
               <p className="text-neutral-500 text-lg">Our stories are currently being documented. Check back soon.</p>

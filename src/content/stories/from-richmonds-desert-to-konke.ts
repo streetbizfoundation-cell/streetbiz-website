@@ -4,7 +4,7 @@ export const story: Story = {
   id: 'from-richmonds-desert-to-konke',
   title: "Loyiso Eugene Pieterse: From a small village in Richmond's Desert, Northern Cape to Konke",
   slug: 'from-richmonds-desert-to-konke',
-  category: 'Project Spotlight',
+  category: 'Nelson Stories',
   excerpt: 'Loyiso Eugene Pieterse shares how mentorship through the Be a Nelson and StreetBiz family helped him build Konke Bin Cleaning & Recycling.',
   content: `My name is Loyiso Eugene Pieterse, I’m 24 years old, and I come from a small village in the desert of Richmond, Northern Cape. Growing up where the wind carries desert dust across long, quiet roads taught me two things: to work with what you have, and to look out for the people beside you. That’s the spirit I try to live by.
 

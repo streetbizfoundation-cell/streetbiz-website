@@ -4,7 +4,7 @@ export const story: Story = {
   id: 'from-strangers-to-family',
   title: 'From Strangers to Family: How the Be a Nelson Movement Changed My Life',
   slug: 'from-strangers-to-family-how-the-be-a-nelson-movement-changed-my-life',
-  category: 'Impact Story',
+  category: 'Coaching',
   excerpt: 'A heartfelt reflection on how the Be a Nelson Movement fosters deep connections and creates a sense of belonging and family among young South African changemakers.',
   content: `I first heard about the StreetBiz Foundation through a friend who had attended one of their workshops. At the time, I was feeling a bit lost, searching for a sense of purpose and a community where I could grow. I decided to give it a try, and from the moment I walked into my first Be a Nelson event, I knew I had found something special.
 

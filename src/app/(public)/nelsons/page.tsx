@@ -9,7 +9,33 @@ export const metadata = {
 }
 
 export default function NelsonsPage() {
-  const visibleNelsons = staticNelsons
+  const topProfiles = [
+    'pilasande-mlatha',
+    'loyiso-pieterse',
+    'zimasa-mretyana',
+    'thuso-pejane',
+    'muganyizi-melchoir',
+    'bafana-binda',
+    'mahlatse-pride-molepo',
+    'tanya-mapfure',
+    'mandela-nkabila',
+  ]
+
+  const topProfileRank = topProfiles.reduce<Record<string, number>>((acc, slug, index) => {
+    acc[slug] = index
+    return acc
+  }, {})
+
+  const visibleNelsons = [...staticNelsons].sort((a, b) => {
+    const aRank = topProfileRank[a.slug] ?? Number.POSITIVE_INFINITY
+    const bRank = topProfileRank[b.slug] ?? Number.POSITIVE_INFINITY
+
+    if (aRank !== bRank) {
+      return aRank - bRank
+    }
+
+    return a.name.localeCompare(b.name)
+  })
 
   return (
     <main>

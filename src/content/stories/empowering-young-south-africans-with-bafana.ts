@@ -4,7 +4,7 @@ export const story: Story = {
   id: 'empowering-young-south-africans-with-bafana',
   title: 'Through the Lens: Meet Bafana',
   slug: 'empowering-young-south-africans-with-bafana',
-  category: 'Impact Story',
+  category: 'Nelson Stories',
   excerpt: 'Bafana Binda reflects on growing up in Olievenhoutbosch, township contradictions, and finding purpose through the Be a Nelson Movement.',
   content: `My journey is rooted in the vibrant yet challenging environment of Olievenhoutbosch, South Africa, where I moved with my mom and younger brother in 1996. At first, we lived in shacks in a section called Camp 1, but in 2001, we moved to a government-built RDP house in Extension 13. Growing up, the township was peaceful, though less developed than it is today. Life was simple, and I was naturally curious, always asking “why” about the world around me. 
 

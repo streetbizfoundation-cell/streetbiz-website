@@ -13,7 +13,7 @@ export interface Story {
   id: string
   title: string
   slug: string
-  category?: 'Impact Story' | 'Community Action' | 'Project Spotlight'
+  category?: 'Impact Story' | 'Community Action' | 'Project Spotlight' | 'Nelson Stories' | 'Coaching'
   excerpt: string
   content: string
   featured_image: string
@@ -37,6 +37,7 @@ export interface Project {
   title: string
   slug: string
   description: string
+  content?: string
   objectives: string[]
   image_url?: string
 }

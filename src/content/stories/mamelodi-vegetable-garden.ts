@@ -4,7 +4,7 @@ export const story: Story = {
   id: 'mamelodi-vegetable-garden',
   title: 'Soup Kitchen, Nourishing the Masses: Meet Zimasa',
   slug: 'mamelodi-vegetable-garden',
-  category: 'Community Action',
+  category: 'Nelson Stories',
   excerpt: 'Zimasa shares how a childhood memory of compassion grew into a soup kitchen, community garden, and practical care for people in need.',
   content: `In the heart of Mamelodi, a vibrant green space is flourishing, providing more than just nourishment for the body. The Mamelodi Vegetable Garden is a testament to the power of community action and the transformative potential of collective effort. What began as a neglected patch of land has become a thriving hub for sustainability, education, and community pride.
 

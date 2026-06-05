@@ -94,9 +94,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="mailto:hello@streetbiz.co.za" className="text-neutral-600 hover:text-primary-500 transition-colors">
+                <Link href="/newsletter" className="text-neutral-600 hover:text-primary-500 transition-colors">
                   Newsletter
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -4,7 +4,7 @@ export const story: Story = {
   id: 'from-rural-roots-to-grassroots-impact-my-journey-of-young-entrepreneur',
   title: 'From Rural Roots to Grassroots Impact: My Journey as a young entrepreneur',
   slug: 'from-rural-roots-to-grassroots-impact-my-journey-of-young-entrepreneur',
-  category: 'Impact Story',
+  category: 'Nelson Stories',
   excerpt: 'A Tanzania-born changemaker reflects on rural education barriers, university access, and the roots of grassroots social impact.',
   content: `I was born in Kyerwa District in northwestern Tanzania, where schools were far away and essential services were almost non-existent. I didn’t start the 1st school class until the age of nine—not because I wasn’t ready, but because I had to wait until I was strong enough to walk several kilometers to the nearest school. When I finally got there, I found a bare classroom with no desks or chairs—we sat on the dusty floor, trying to learn. There was no food offered, so hunger gnawed at us until noon when we began the long walk back home. It took extra commitment just to stay in school and avoid dropping out. Those early hardships taught me a lasting truth: that geography and poverty can severely limit opportunity. But they also planted the seed for the work I do today.
 

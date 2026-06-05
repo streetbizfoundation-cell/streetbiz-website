@@ -4,7 +4,7 @@ export const story: Story = {
   id: 'from-ngobozana-to-the-world-a-journey-of-resilience-science-and-service',
   title: 'From Ngobozana to the World: A Journey of Resilience, Science, and Service',
   slug: 'from-ngobozana-to-the-world-a-journey-of-resilience-science-and-service',
-  category: 'Impact Story',
+  category: 'Nelson Stories',
   excerpt: 'A young scientist from Ngobozana reflects on resilience, education, marathon running, chemistry, and service.',
   content: `I come from Ngobozana, a small village in Lusikisiki, Eastern Cape—a place where resilience is woven into daily life. Raised by my grandmother, I learned perseverance, humility, and the belief that education is not only a personal achievement but a pathway for others as well. Being the first in my family to pass matric and attend university carried both ambition and responsibility.
 

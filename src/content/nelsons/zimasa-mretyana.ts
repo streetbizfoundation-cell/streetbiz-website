@@ -1,9 +1,9 @@
 import { Nelson } from '@/lib/types/content'
 
 export const nelson: Nelson = {
-  "id": "static-zimasa-mretanya",
-  "name": "Zimasa Zama Mretyana",
-  "slug": "zimasa-mretanya",
+  "id": "static-zimasa-mretyana",
+  "name": "Zimasa Mretyana",
+  "slug": "zimasa-mretyana",
   "location": "Centurion, Gauteng, South Africa",
   "short_description": "Founder of the Rivoni Foundation, feeding communities through soup kitchens, gardens, and youth empowerment.",
   "bio": `I was born in the Eastern Cape and grew up in Pretoria, the child of a devoted housewife. My mother filled our home with love, but our pantry was often bare. I watched local soup kitchens bring warmth and compassion to people who felt invisible.
@@ -17,7 +17,6 @@ Our garden is not just a source of food — it is a place for learning, collabor
 StreetBiz and Be a Nelson were game-changers for Rivoni. They exposed us to entrepreneurial thinking, financial literacy, and global networks. Through OSUN, we pitched our idea to students at 12 universities. These connections helped us secure grants and set a new goal: land acquisition for a permanent community hub.
 
 We now need support to grow our work into a lasting model of social entrepreneurship, skills development, and dignified care. I want Rivoni to be a role model for other communities across South Africa.`,
-  "image_url": "/images/nelsons/zimasa-mretanya.jpg",
+  "image_url": "/images/nelsons/zimasa-mretyana.jpg",
   "join_date": "2024-11-01T00:00:00.000Z"
 }
-

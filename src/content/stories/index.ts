@@ -7,9 +7,11 @@ import { story as from_the_streets_to_dreams_a_journey_of_perseverance_and_purpo
 import { story as from_strangers_to_family } from './from-strangers-to-family'
 import { story as globe_nasa } from './globe-nasa'
 import { story as leading_change_for_sustainability } from './leading-change-for-sustainability'
+import { story as soup_kitchen_nourishing_the_masses_meet_zimasa } from './soup-kitchen-nourishing-the-masses-meet-zimasa'
 import { story as mandela_day_2025 } from './mandela-day-2025'
 
 export const stories = [
+  soup_kitchen_nourishing_the_masses_meet_zimasa,
   from_ngobozana_to_the_world_a_journey_of_resilience_science_and_service,
   from_richmonds_desert_to_konke,
   from_rural_roots_to_grassroots_impact_my_journey_of_young_entrepreneur,

@@ -37,7 +37,8 @@ const milestones = [
   { year: '100+', event: 'township communities reached through the walk.' },
   { year: '200', event: 'high schools engaged through the walk.' },
   { year: '2022', event: 'First Be a Nelson Conference.' },
-  { year: '20', event: 'young changemakers supported through the OSUN social entrepreneurship initiative.' },
+  { year: '2024', event: 'MasterPeace South Africa Walk in the Western Cape Coastal region.' },
+  { year: '73', event: 'young changemakers supported across OSUN Social Entrepreneurship and Leading Change for Sustainability cohorts.' },
   { year: '6', event: 'provinces represented in initiative project implementation (GP, FS, MP, WC, EC, KZN).' },
 ]
 
@@ -172,7 +173,7 @@ export default function AboutPage() {
                     Our work includes workshops, conferences, competitions, bootcamps, nature walks, coaching, and access to online higher education opportunities that support both personal and professional development.
                   </p>
                   <p className="font-bold text-neutral-900">
-                    A recent initiative supported 20 young changemakers through the OSUN social entrepreneurship programme across five South African provinces.
+                    A recent initiative supported 73 participants across all course cohorts in the social entrepreneurship and Leading Change for Sustainability programmes, reaching six South African provinces.
                   </p>
                 </div>
               </div>
