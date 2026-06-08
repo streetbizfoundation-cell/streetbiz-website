@@ -34,10 +34,11 @@ export default function ContactPage() {
         form.reset()
       } else {
         const data = await response.json()
-        setErrorMessage(data.errors?.map((e: any) => e.message).join(', ') || 'Something went wrong. Please try again.')
+        const errors = data.errors as { message: string }[] | undefined
+        setErrorMessage(errors?.map((e) => e.message).join(', ') || 'Something went wrong. Please try again.')
         setStatus('error')
       }
-    } catch (err) {
+    } catch {
       setErrorMessage('Failed to connect to the server. Please check your internet connection.')
       setStatus('error')
     }

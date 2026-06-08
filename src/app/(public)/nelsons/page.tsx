@@ -6,20 +6,20 @@ import { NelsonCard } from '@/components/sections/NelsonCard'
 import Link from 'next/link'
 import { nelsons as staticNelsons } from '@/content/nelsons'
 
+const topProfiles = [
+  'pilasande-mlatha',
+  'loyiso-pieterse',
+  'zimasa-mretyana',
+  'thuso-pejane',
+  'muganyizi-melchoir',
+  'bafana-binda',
+  'mahlatse-pride-molepo',
+  'tanya-mapfure',
+  'mandela-nkabila',
+]
+
 export default function NelsonsPage() {
   const [selectedLocation, setSelectedLocation] = useState('All Locations')
-
-  const topProfiles = [
-    'pilasande-mlatha',
-    'loyiso-pieterse',
-    'zimasa-mretyana',
-    'thuso-pejane',
-    'muganyizi-melchoir',
-    'bafana-binda',
-    'mahlatse-pride-molepo',
-    'tanya-mapfure',
-    'mandela-nkabila',
-  ]
 
   const topProfileRank = useMemo(() => {
     return topProfiles.reduce<Record<string, number>>((acc, slug, index) => {
