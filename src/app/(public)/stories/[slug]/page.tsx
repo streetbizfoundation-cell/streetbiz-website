@@ -72,28 +72,37 @@ export default async function StoryReaderPage({ params }: StoryReaderPageProps) 
         </div>
       </header>
 
-      {/* Featured Image */}
-      {visibleStory.featured_image && (
-        <section className="container max-w-5xl mb-20">
-          <div className="relative aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl">
-            <Image
-              src={visibleStory.featured_image}
-              alt={visibleStory.title}
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-        </section>
-      )}
-
-      {/* Article Body */}
       <article className="container max-w-3xl">
         <div className="prose prose-lg prose-neutral max-w-none prose-headings:font-serif prose-p:leading-loose prose-p:text-neutral-700">
-          {/* Using whitespace-pre-wrap to respect basic formatting from the CMS */}
-          <div className="whitespace-pre-wrap">
-            {visibleStory.content}
-          </div>
+          {/* Parse content for inline images */}
+          {visibleStory.content.split(/(\[IMAGE\][\s\S]*?\[\/IMAGE\])/).map((part, idx) => {
+            if (part.startsWith('[IMAGE]')) {
+              const match = part.match(/\[IMAGE\]([\s\S]*?)\[\/IMAGE\]/)
+              if (match) {
+                const imagePath = match[1].trim()
+                return (
+                  <figure key={idx} className="my-12">
+                    <div className="relative w-full bg-neutral-100 rounded-2xl overflow-hidden flex items-center justify-center py-8" style={{ maxHeight: '500px' }}>
+                      <Image
+                        src={imagePath}
+                        alt="Story image"
+                        width={600}
+                        height={400}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </div>
+                  </figure>
+                )
+              }
+            } else if (part.trim()) {
+              return (
+                <div key={idx} className="whitespace-pre-wrap">
+                  {part}
+                </div>
+              )
+            }
+            return null
+          })}
         </div>
 
         {/* Story Footer / Author Link */}

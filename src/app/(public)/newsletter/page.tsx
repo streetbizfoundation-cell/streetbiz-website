@@ -60,14 +60,18 @@ export default function NewsletterArchivePage() {
             ))}
           </div>
 
-          <div className="mt-12 text-center text-neutral-600">
-            <Paragraph>
-              If you would like to receive future newsletters directly to your inbox, please contact us at{' '}
-              <Link href="mailto:hello@streetbiz.co.za" className="text-primary-600 hover:text-primary-700">
-                hello@streetbiz.co.za
-              </Link>
-              .
+          <div className="mt-16 text-center">
+            <Paragraph className="text-neutral-600 mb-8">
+              Want to receive these updates directly in your inbox as they are released?
             </Paragraph>
+            <Link 
+              href="https://streetbiz.us10.list-manage.com/subscribe?u=80acd5ee1259b06c495b07222&id=18b999605c"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-12 py-4 bg-primary-600 text-white font-bold rounded-full hover:bg-primary-700 transition-all shadow-xl shadow-primary-600/30 scale-100 hover:scale-105"
+            >
+              Subscribe to our Newsletter
+            </Link>
           </div>
         </div>
       </section>

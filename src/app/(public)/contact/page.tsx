@@ -1,19 +1,51 @@
+'use client'
+
+import { useState } from 'react'
 import { H1, H2 } from '@/components/common/Typography'
 import { Button } from '@/components/common/Button'
 import { Input } from '@/components/common/Input'
-import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
+import { Mail, Phone, MapPin, ArrowRight, CheckCircle2 } from 'lucide-react'
 import { FacebookIcon, InstagramIcon, LinkedinIcon, YoutubeIcon } from '@/components/icons/SocialIcons'
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'Contact Us | StreetBiz Foundation',
-  description: 'Get in touch with StreetBiz Foundation about partnerships, donations, the Be a Nelson Movement, or upcoming events.',
-}
-
 export default function ContactPage() {
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
+  const [errorMessage, setErrorMessage] = useState('')
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setStatus('submitting')
+    setErrorMessage('')
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
+    
+    try {
+      const response = await fetch('https://formspree.io/f/xgobkbgw', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        setStatus('success')
+        form.reset()
+      } else {
+        const data = await response.json()
+        setErrorMessage(data.errors?.map((e: any) => e.message).join(', ') || 'Something went wrong. Please try again.')
+        setStatus('error')
+      }
+    } catch (err) {
+      setErrorMessage('Failed to connect to the server. Please check your internet connection.')
+      setStatus('error')
+    }
+  }
+
   return (
     <main className="bg-white">
-      {/* ... previous code ... */}
+      {/* Narrative Header */}
       <section className="py-24 md:py-32 bg-neutral-900 text-white overflow-hidden relative">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-primary-600/10 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2" />
         <div className="container relative z-10">
@@ -103,42 +135,73 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="lg:col-span-7">
               <div className="bg-neutral-50 p-8 md:p-12 rounded-[40px] border border-neutral-100 shadow-sm">
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-xs font-bold uppercase tracking-widest text-neutral-500 ml-1">Full Name</label>
-                      <Input placeholder="Your name" className="rounded-2xl border-none shadow-inner" />
+                {status === 'success' ? (
+                  <div className="py-12 text-center space-y-6">
+                    <div className="w-20 h-20 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <CheckCircle2 size={40} />
                     </div>
-                    <div className="space-y-2">
-                      <label className="text-xs font-bold uppercase tracking-widest text-neutral-500 ml-1">Email Address</label>
-                      <Input type="email" placeholder="you@example.com" className="rounded-2xl border-none shadow-inner" />
+                    <H2 className="text-3xl font-serif">Message Sent!</H2>
+                    <p className="text-neutral-600 text-lg max-w-sm mx-auto">
+                      Thank you for reaching out. A member of the StreetBiz team will get back to you shortly.
+                    </p>
+                    <button 
+                      onClick={() => setStatus('idle')}
+                      className="text-primary-600 font-bold hover:underline"
+                    >
+                      Send another message
+                    </button>
+                  </div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="text-xs font-bold uppercase tracking-widest text-neutral-500 ml-1">Full Name</label>
+                        <Input name="name" required placeholder="Your name" className="rounded-2xl border-none shadow-inner" />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-xs font-bold uppercase tracking-widest text-neutral-500 ml-1">Email Address</label>
+                        <Input name="email" type="email" required placeholder="you@example.com" className="rounded-2xl border-none shadow-inner" />
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="space-y-2">
-                    <label className="text-xs font-bold uppercase tracking-widest text-neutral-500 ml-1">Subject</label>
-                    <select className="w-full h-12 px-4 rounded-2xl bg-white border-none shadow-inner text-sm focus:ring-2 focus:ring-primary-500">
-                      <option>General Inquiry</option>
-                      <option>Nominate a Nelson</option>
-                      <option>Partnership Interest</option>
-                      <option>Be a Nelson Walk</option>
-                      <option>Mentoring and Coaching</option>
-                      <option>Media/Press</option>
-                    </select>
-                  </div>
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold uppercase tracking-widest text-neutral-500 ml-1">Subject</label>
+                      <select name="subject" className="w-full h-12 px-4 rounded-2xl bg-white border-none shadow-inner text-sm focus:ring-2 focus:ring-primary-500">
+                        <option>General Inquiry</option>
+                        <option>Nominate a Nelson</option>
+                        <option>Partnership Interest</option>
+                        <option>Be a Nelson Walk</option>
+                        <option>Mentoring and Coaching</option>
+                        <option>Media/Press</option>
+                      </select>
+                    </div>
 
-                  <div className="space-y-2">
-                    <label className="text-xs font-bold uppercase tracking-widest text-neutral-500 ml-1">Your Message</label>
-                    <textarea 
-                      placeholder="Tell us more about how you&apos;d like to get involved..."
-                      className="w-full min-h-[160px] px-4 py-4 rounded-2xl bg-white border-none shadow-inner text-sm focus:ring-2 focus:ring-primary-500"
-                    />
-                  </div>
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold uppercase tracking-widest text-neutral-500 ml-1">Your Message</label>
+                      <textarea 
+                        name="message"
+                        required
+                        placeholder="Tell us more about how you&apos;d like to get involved..."
+                        className="w-full min-h-[160px] px-4 py-4 rounded-2xl bg-white border-none shadow-inner text-sm focus:ring-2 focus:ring-primary-500"
+                      />
+                    </div>
 
-                  <Button className="w-full py-8 text-lg rounded-2xl group">
-                    Send Message <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                  </Button>
-                </form>
+                    {status === 'error' && (
+                      <p className="text-red-500 text-sm font-medium bg-red-50 p-4 rounded-xl border border-red-100">
+                        {errorMessage}
+                      </p>
+                    )}
+
+                    <Button 
+                      type="submit" 
+                      disabled={status === 'submitting'}
+                      className="w-full py-8 text-lg rounded-2xl group disabled:opacity-70"
+                    >
+                      {status === 'submitting' ? 'Sending...' : 'Send Message'} 
+                      {status !== 'submitting' && <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />}
+                    </Button>
+                  </form>
+                )}
               </div>
             </div>
 

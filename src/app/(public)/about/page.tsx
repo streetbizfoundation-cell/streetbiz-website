@@ -38,7 +38,7 @@ const milestones = [
   { year: '200', event: 'high schools engaged through the walk.' },
   { year: '2022', event: 'First Be a Nelson Conference.' },
   { year: '2024', event: 'MasterPeace South Africa Walk in the Western Cape Coastal region.' },
-  { year: '73', event: 'young changemakers supported across OSUN Social Entrepreneurship and Leading Change for Sustainability cohorts.' },
+  { year: '73', event: 'young changemakers supported across Democratizing Innovation Institute Social Entrepreneurship and Leading Change for Sustainability cohorts.' },
   { year: '6', event: 'provinces represented in initiative project implementation (GP, FS, MP, WC, EC, KZN).' },
 ]
 

@@ -5,6 +5,8 @@ export const nelson: Nelson = {
   "name": "Thuso Pejane",
   "slug": "thuso-pejane",
   "location": "Stellenbosch, Western Cape",
+  "province": "Western Cape",
+  "country": "South Africa",
   "short_description": "Soweto-born changemaker building ResPlek to make verified student housing safer and more accessible.",
   "bio": `My name is Thuso Pejane and I am from Rockville, Soweto. I grew up with a single mother who worked as a domestic worker, and I knew education was the only ticket out of our struggle. For a while, football was my greatest hope.
 

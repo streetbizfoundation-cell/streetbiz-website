@@ -60,13 +60,13 @@ const pastEvents: EventItem[] = [
     title: 'Be a Nelson Workshop in Social Entrepreneurship',
     date: 'July 2024',
     description: 'In July 2024, StreetBiz led Be a Nelson Entrepreneurial Workshops across four South African provinces — Free State, Gauteng, KwaZulu-Natal, and Western Cape. The workshops attracted over 60 aspiring social entrepreneurs interested in developing innovative solutions for their communities.',
-    outcome: 'During the workshops, StreetBiz also presented certificates to participants who successfully completed the Open Society University Network’s Social Entrepreneurship course.',
+    outcome: 'During the workshops, StreetBiz also presented certificates to participants who successfully completed the Democratizing Innovation Institute’s Social Entrepreneurship course.',
   },
   {
     title: 'Be a Nelson / MasterPeace Walk in Nature',
     date: 'March 2024',
-    description: 'This six-day walk brought together 15 European participants and 18 South African youth from the Be a Nelson Movement. Participants built mentoring relationships while walking in nature and exploring innovative social and business ideas.',
-    outcome: 'The experience was designed to empower young people and foster cross-cultural connection through shared time, conversation, and learning.',
+    description: 'This six-day, off-the-grid walk brought together 15 international participants and 18 South African youth from the Be a Nelson Movement for a journey of personal reflection and leadership development along the coastal Indian Ocean.',
+    outcome: 'The experience fostered lifelong friendships across cultural boundaries and empowered participants to believe in their potential to achieve greatness, regardless of their background.',
   },
   {
     title: 'UN General Assembly Science Summit 2024',

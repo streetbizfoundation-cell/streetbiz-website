@@ -28,15 +28,15 @@ export const partners: Partner[] = [
     order_index: 2
   },
   {
-    id: 'osun',
-    name: 'Open Society University Network (OSUN)',
-    logo_url: '/images/partners/osun.png',
-    website_url: 'https://osun.bard.edu/',
-    excerpt: 'An international higher-education network focused on access, engaged learning and cross-institutional collaboration. (Website may require access.)',
+    id: 'democratizing',
+    name: 'Democratizing Innovation Institute',
+    logo_url: '/images/partners/democratizing.png',
+    website_url: 'https://democratizinginnovation.org/',
+    excerpt: 'A practice-focused institute that helps people design and run local experiments to tackle entrenched systems and problems.',
     description: `
-      <p>The Open Society University Network (OSUN) is a collaboration of higher-education institutions that promotes access, engaged learning and interdisciplinary research across partner colleges and universities.</p>
-      <p>OSUN supports curriculum innovation, scholar exchanges and programs that connect students and faculty to civic learning and community-based research.</p>
-      <p><a href="https://osun.bard.edu/" target="_blank" rel="noopener noreferrer">Visit OSUN</a></p>
+      <p>The Democratizing Innovation Institute supports people and organisations to run small, local experiments that test solutions to entrenched problems.</p>
+      <p>The institute provides coaching, insights and case studies, and runs the "What If Instead?" podcast that showcases everyday innovators tackling systemic issues.</p>
+      <p><a href="https://democratizinginnovation.org/" target="_blank" rel="noopener noreferrer">Visit the Institute</a></p>
     `,
     order_index: 3
   },
@@ -103,25 +103,16 @@ export const partners: Partner[] = [
   },
   {
     id: 'wce',
-    name: 'World Circular Economy (WCE)',
+    name: 'World Cafe Europe (WCE)',
     logo_url: '/images/partners/wce.jpg',
+    website_url: 'https://www.worldcafe.eu/',
+    excerpt: 'A non-profit organisation dedicated to fostering social innovation and collective action through dialogical communication and the "World Cafe" method.',
     description: `
-      <p>World Circular Economy partners with organisations to accelerate circular economy principles, waste reduction and sustainable business practices.</p>
-      <p>We collaborate on projects that connect youth entrepreneurs with circular economy ideas, training and pilot opportunities.</p>
+      <p>World Cafe Europe (WCE) is a non-profit organisation that facilitates social innovation by harnessing "swarm intelligence" through structured, meaningful dialogue. Based on the belief that "to change the future, you must change the conversation," WCE creates environments where diverse groups can unlock their collective wisdom.</p>
+      <p>The organisation has a proven track record of working with city governments, NGOs, and global institutions—such as Save the Children and the city of Munich—to address complex social challenges ranging from refugee integration to regional talent retention.</p>
+      <p>StreetBiz Foundation integrates the World Cafe methodology as a core component of "The Mindshift" experience, using it during the Be a Nelson Walk and workshops to help young leaders shift from a survival mindset to one of action and independence.</p>
+      <p><a href="https://www.worldcafe.eu/" target="_blank" rel="noopener noreferrer">Visit World Cafe Europe</a></p>
     `,
     order_index: 9
-  },
-  {
-    id: 'democratizing',
-    name: 'Democratizing Innovation Institute',
-    logo_url: '/images/partners/democratizing.png',
-    website_url: 'https://democratizinginnovation.org/',
-    excerpt: 'A practice-focused institute that helps people design and run local experiments to tackle entrenched systems and problems.',
-    description: `
-      <p>The Democratizing Innovation Institute supports people and organisations to run small, local experiments that test solutions to entrenched problems.</p>
-      <p>The institute provides coaching, insights and case studies, and runs the "What If Instead?" podcast that showcases everyday innovators tackling systemic issues.</p>
-      <p><a href="https://democratizinginnovation.org/" target="_blank" rel="noopener noreferrer">Visit the Institute</a></p>
-    `,
-    order_index: 10
   }
 ]

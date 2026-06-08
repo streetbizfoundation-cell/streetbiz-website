@@ -5,6 +5,8 @@ export const nelson: Nelson = {
   "name": "Bafana Binda",
   "slug": "bafana-binda",
   "location": "Olievenhoutbosch, Gauteng, South Africa",
+  "province": "Gauteng",
+  "country": "South Africa",
   "short_description": "Township photographer and Be a Nelson creative documenting stories that build hope and opportunity.",
   "bio": `My journey is rooted in Olievenhoutbosch, where I moved with my mom and younger brother in 1996. We began in shacks and later moved into an RDP home in Extension 13. Life in the township was simple, but I was always curious and asking “why”.
 

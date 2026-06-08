@@ -5,6 +5,8 @@ export const nelson: Nelson = {
   "name": "Gabriel Letsoela",
   "slug": "gabriel-letsoela",
   "location": "Free State, South Africa",
+  "province": "Free State",
+  "country": "South Africa",
   "short_description": "A Free State-based Be a Nelson changemaker committed to community impact.",
   "bio": "A member of the Be a Nelson Movement, part of a growing network of grassroots changemakers using social entrepreneurship, education, experience, and exposure to serve their communities.",
   "image_url": "/images/nelsons/gabriel-letsoela.jpg",

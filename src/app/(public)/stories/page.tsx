@@ -1,6 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
+import Link from 'next/link'
 import { H1, Lead } from '@/components/common/Typography'
 import { StoryCard } from '@/components/sections/StoryCard'
 import { stories as staticStories } from '@/content/stories'
@@ -19,15 +20,20 @@ export default function StoriesPage() {
   }, [])
 
   const visibleStories = useMemo(() => {
+    let filtered = staticStories
+    
     if (selectedFilter === 'All') {
-      return staticStories
+      filtered = staticStories
+    } else if (selectedFilter === 'Nelson Stories') {
+      filtered = staticStories.filter((story) => Boolean(story.nelson_slug))
+    } else {
+      filtered = staticStories.filter((story) => story.category === selectedFilter)
     }
 
-    if (selectedFilter === 'Nelson Stories') {
-      return staticStories.filter((story) => Boolean(story.nelson_slug))
-    }
-
-    return staticStories.filter((story) => story.category === selectedFilter)
+    // Sort by publish_date in descending order (latest first)
+    return filtered.sort((a, b) => 
+      new Date(b.publish_date).getTime() - new Date(a.publish_date).getTime()
+    )
   }, [selectedFilter])
 
   return (
@@ -102,16 +108,16 @@ export default function StoriesPage() {
             <p className="text-neutral-400 mb-10 text-lg">
               Receive monthly updates on new Nelson profiles and transformation stories directly in your inbox.
             </p>
-            <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-primary-500"
-              />
-              <button className="px-8 py-4 bg-primary-600 text-white font-bold rounded-full hover:bg-primary-700 transition-colors">
-                Subscribe
-              </button>
-            </form>
+            <div className="mt-2">
+              <Link 
+                href="https://streetbiz.us10.list-manage.com/subscribe?u=80acd5ee1259b06c495b07222&id=18b999605c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-12 py-4 bg-primary-600 text-white font-bold rounded-full hover:bg-primary-700 transition-all shadow-xl shadow-primary-600/30 scale-100 hover:scale-105"
+              >
+                Subscribe to our Newsletter
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -6,17 +6,21 @@ export const story: Story = {
   slug: 'globe-nasa',
   category: 'Project Spotlight',
   excerpt: 'StreetBiz Foundation is proud to partner with the NASA GLOBE Program to bring environmental education and scientific observation to South African communities.',
-  content: `The Global Learning and Observations to Benefit the Environment (GLOBE) Program is an international science and education program that provides students and the public worldwide with the opportunity to participate in data collection and the scientific process, and contribute meaningfully to our understanding of the Earth system and global environment.
+  content: `NASA Globe Program
 
-Through our partnership with NASA GLOBE, StreetBiz Foundation is empowering young people in South Africa to become citizen scientists. We provide them with the tools and training to collect environmental data, such as temperature, precipitation, and cloud cover, which they then upload to the global GLOBE database.
+Environmental education
 
-This data is used by scientists around the world, including NASA scientists, to study our planet's environment. By participating in this program, our students are not only learning about science and the environment, but they are also making a real contribution to global scientific research.
+In 2021, StreetBiz Foundation joined Global Learning and Observations to Benefit the Environment Program (GLOBE), a worldwide program bringing together students, teachers, scientists and citizens to promote science and foster learning about the environment.
 
-The NASA GLOBE Program also fosters a sense of global community and connection. Our students can connect with other students and scientists around the world who are also participating in the program, sharing their findings and learning from each other.
+Through a hands-on approach to inquiry, participants are encouraged to engage in local investigations that cover five core fields: atmosphere, biosphere, hydrosphere, pedosphere (soil), and Earth as a system. Observations made locally are submitted to the GLOBE data and information system and can be accessed freely online. These measurements are combined with readings at automated stations to create a worldwide resource for conducting scientific inquiry; some measurements serve as ground truth for NASA satellite data products (e.g., clouds, soil moisture).
 
-We believe that environmental education is crucial for the future of South Africa. By empowering our young people to understand and protect our planet, we are building a more sustainable and resilient future for everyone.
+[IMAGE]/images/stories/globe-nasa-1.svg[/IMAGE]
 
-Our journey with NASA GLOBE continues to grow, and we are excited to see the impact our citizen scientists will make. Together, we are exploring and protecting our local environment through the lens of international cooperation and technology.`,
+[IMAGE]/images/stories/globe-nasa.jpg[/IMAGE]
+
+The GLOBE data and information system contains over 130 million measurements from more than 10 million students in 113 countries around the world since its operation began in 1995.In South Africa, we focus on 4 elements from nature, water, clouds, trees and insects. Students register and photos from their local environment get extracted from mobile phones when the satellite crosses above.
+
+Visit the Globe NASA website: https://www.globe.gov/about`,
   featured_image: '/images/stories/globe-nasa.jpg',
   publish_date: '2021-06-01T00:00:00.000Z',
   is_featured: false

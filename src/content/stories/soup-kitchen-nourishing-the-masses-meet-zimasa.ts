@@ -2,27 +2,41 @@ import { Story } from '@/lib/types/content'
 
 export const story: Story = {
   id: 'soup-kitchen-nourishing-the-masses-meet-zimasa',
-  title: 'SOUP KITCHEN, NOURISHING THE MASSES: MEET ZIMASA',
+  title: 'Soup Kitchen, Nourishing the Masses: Meet Zimasa',
   slug: 'soup-kitchen-nourishing-the-masses-meet-zimasa',
   category: 'Nelson Stories',
   excerpt: 'Meet Zimasa Mretyana, founder of the Rivoni Foundation, whose commitment to nourishing her community through a local soup kitchen and sustainable gardens is changing lives.',
-  content: `Zimasa Mretyana, born in Barkly East and raised in Pretoria, was inspired by her mother's kindness and a local soup kitchen run by "Mama Aidas" to combat hunger in her community. After witnessing people searching for food at a dump site, she felt a calling to act.
+  content: `My name is Zimasa. I was born in the Eastern Cape, in a small town named Barkly East and grew up in a small township in Pretoria as the child of a devoted housewife. My mother filled our home with love, but our modest circumstances often meant our pantry was bare. I remember from my childhood that every Saturday the aroma of soup wafted through our neighborhood as a local soup kitchen run by Mama Aidas sprung to life. I was captivated by the warmth they offered – not just in meals but in compassion and community.
 
-She began by volunteering and eventually founded the **Rivoni Foundation**. Initially, the foundation faced significant challenges, including a lack of a permanent workspace and transport, often requiring volunteers to carry equipment on their heads. A local pastor eventually provided a central space for their operations.
+In our own home my mother would also often gather leftover ingredients and turn them into hearty meals for our neighbors in need, her kindness inspiring everyone around us. She taught me that no matter how little we had, sharing joy was a wealth that multiplied.
 
-The Rivoni Foundation has since evolved from a simple soup kitchen into a holistic community hub that focuses on:
+When I was a bit older, I stumbled one afternoon upon a group of women and children sifting through a dump site, as they searched for anything to fill their empty stomachs. The sight struck me like a lightning bolt – these were not mere statistics or faceless strangers; they were human beings, people with stories, dreams, and dignity. That moment was a cry for help that echoed in my heart, stirring something deep within me. I could not walk away, nor could I allow it to fade into the background of my daily life. I felt a responsibility, a calling, to do something. Growing up with a mother who always believed in the power of small acts of kindness, I was inspired by the idea that together we could make a difference.
 
-*   **Food Security:** Serving hot meals and maintaining a vegetable garden that sustains the kitchen and sells produce to the community.
-*   **Skills Development:** Empowering individuals and school leavers through volunteer programs and entrepreneurial training.
-*   **Youth Support:** Encouraging children to participate in sports and extramural activities.
+I began volunteering at a local soup organisation, witnessing firsthand how a simple bowl of soup could bring warmth and hope to those who felt invisible. I gathered friends and family to raise awareness, sharing stories of the resilient people I had met, encouraging others to join in the fight against hunger.
 
-Through a partnership with the **StreetBiz Foundation** and the **Be a Nelson Movement**, Zimasa gained access to financial literacy training and the Open Society University Network (OSUN). The foundation is now focused on land acquisition to expand its impact on unemployment and poverty in South Africa.
+It was this journey that inspired me to create the Rivoni Foundation, a safe haven where we could actively combat food insecurity in our community. We opened a soup kitchen that served hot meals and provided a gathering space for those in need. But beyond filling bellies, we aimed to restore dignity and foster a sense of belonging.
 
-"Being a Nelson means leading with your heart," Zimasa says. "It means seeing a need in your community and having the courage to act. It's about recognizing that we are all connected and that by lifting others up, we lift ourselves up as well."
+We encountered numerous challenges. One of them was not having a place to work from. We drifted from one location to another, each one presenting its own set of obstacles. We did not have transport to carry our working equipment, so we often had to walk carrying things on our head to wherever it is that we had to work from. Fortunately, a local pastor came to our rescue. He had heard about what we do and had decided to come and witness it for himself. With open arms and a generous heart, he offered us the place we desperately needed for our mission. It was at the centre of the community which meant that it was easier for everyone, especially the elderly people, to reach.
 
-Our soup kitchen has become a hub of community activity. We don't just serve food; we offer a listening ear and a helping hand. We've seen neighbors start to help each other, and we've seen a renewed sense of pride in our community.
+We evolved from a humble soup kitchen into a flourishing foundation of hope. Our mission expanded beyond providing food; we began focusing on skills development, empowering individuals to build a brighter future. We also planted a vibrant vegetable garden that not only sustains our kitchen but also offers fresh produce for the community to purchase. The funds generated by these sales are reinvested into our Foundation, creating a sustainable cycle of support and growth. Together, we are cultivating not just crops, but opportunities for a better tomorrow.
 
-Zimasa is proud to be a Nelson, but she knows there is still so much more to be done. Her dream is to see a day when no one in her community goes to bed hungry, and where every person has the opportunity to thrive.`,
+[IMAGE]/images/stories/zimasa-vegetable-garden0.jpg[/IMAGE]
+
+The vegetable garden at the Rivoni Foundation.
+
+At the Rivoni Foundation, we recognize the importance of holistic development in children. Extramural activities and sports play a vital role in fostering physical, emotional, and social growth. We aim to encourage and support the kids of our Foundation to participate in various extramural activities and sporting events.
+
+The Rivoni Foundation recognizes also the significance of empowering young individuals, particularly school leavers, to become active contributors to their communities. To achieve this, the Rivoni Foundation offers comprehensive support for volunteer programs tailored specifically for school leavers. These initiatives aim to foster personal growth, skills development, and social responsibility among young volunteers.
+
+[IMAGE]/images/stories/zimasa-serving-meals.jpg[/IMAGE]
+
+Serving meals to children at the church, the current base of the Rivoni Foundation.
+
+We were introduced to StreetBiz Foundation and became members of Be a Nelson Movement, which was a game-changer for the Rivoni Foundation. With our missions aligned, and experiencing their expertise and enthusiasm, the partnership holds enormous empowerment for our entrepreneurial spirit.
+
+StreetBiz exposed us to innovative thinking, sharing their experience with programs promoting the entrepreneurial mindset. Our exposure to financial literacy skills, and economic empowerment, changed the approach of the Rivoni Foundation. StreetBiz also gave us access to the Democratizing Innovation Institute where we had to pitch our business idea to faculties and students from 12 global Universities. We never thought this to be a possibility!
+
+This development process enabled us to find new funding opportunities and secure grants that enabled us to expand our programs and set a new goal for ourselves, land acquisition. Bigger land of our own will enhance ownership and allow us to explore new avenues such as practical skills development going with entrepreneurship skills and social entrepreneurship in our fight against unemployment, poverty and inequality in South Africa, which resonates with the UN’s Sustainable Development Goals. We want to be a role model for other communities inÂ SouthÂ Africa.`,
   featured_image: '/images/stories/zimasa-vegetable-garden.jpg',
   publish_date: '2024-11-17T00:00:00.000Z',
   is_featured: true,

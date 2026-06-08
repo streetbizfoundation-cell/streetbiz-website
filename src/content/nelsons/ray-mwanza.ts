@@ -5,6 +5,7 @@ export const nelson: Nelson = {
   "name": "Ray Mwanza",
   "slug": "ray-mwanza",
   "location": "Zambia",
+  "country": "Zambia",
   "short_description": "A Zambia-based Be a Nelson changemaker committed to community impact.",
   "bio": "A member of the Be a Nelson Movement, part of a growing network of grassroots changemakers using social entrepreneurship, education, experience, and exposure to serve their communities.",
   "image_url": "/images/nelsons/ray-mwanza.jpg",

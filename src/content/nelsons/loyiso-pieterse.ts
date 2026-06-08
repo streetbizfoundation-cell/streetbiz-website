@@ -5,6 +5,8 @@ export const nelson: Nelson = {
   "name": "Loyiso Pieterse",
   "slug": "loyiso-pieterse",
   "location": "Belmont Park, Kraaifontein, Western Cape",
+  "province": "Western Cape",
+  "country": "South Africa",
   "short_description": "Founder of Konke Bin Cleaning & Recycling, creating dignity, jobs, and creative space from sanitation services in Kraaifontein.",
   "bio": `I’m Loyiso Eugene Pieterse, and I come from a small village in the desert of Richmond, Northern Cape. Growing up in a place where the wind carries desert dust across long, quiet roads taught me to work with what I have and to care for the people beside me.
 

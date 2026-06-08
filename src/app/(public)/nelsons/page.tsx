@@ -1,14 +1,14 @@
+'use client'
+
+import { useMemo, useState } from 'react'
 import { H1, Lead } from '@/components/common/Typography'
 import { NelsonCard } from '@/components/sections/NelsonCard'
 import Link from 'next/link'
 import { nelsons as staticNelsons } from '@/content/nelsons'
 
-export const metadata = {
-  title: 'Meet the Nelsons | StreetBiz Foundation',
-  description: 'Discover the faces and stories of the Be a Nelson movement. Real people, real transformation.',
-}
-
 export default function NelsonsPage() {
+  const [selectedLocation, setSelectedLocation] = useState('All Locations')
+
   const topProfiles = [
     'pilasande-mlatha',
     'loyiso-pieterse',
@@ -21,21 +21,45 @@ export default function NelsonsPage() {
     'mandela-nkabila',
   ]
 
-  const topProfileRank = topProfiles.reduce<Record<string, number>>((acc, slug, index) => {
-    acc[slug] = index
-    return acc
-  }, {})
+  const topProfileRank = useMemo(() => {
+    return topProfiles.reduce<Record<string, number>>((acc, slug, index) => {
+      acc[slug] = index
+      return acc
+    }, {})
+  }, [])
 
-  const visibleNelsons = [...staticNelsons].sort((a, b) => {
-    const aRank = topProfileRank[a.slug] ?? Number.POSITIVE_INFINITY
-    const bRank = topProfileRank[b.slug] ?? Number.POSITIVE_INFINITY
+  const locationOptions = useMemo(() => {
+    const locations = new Set<string>()
+    staticNelsons.forEach(nelson => {
+      if (nelson.country === 'South Africa' && nelson.province) {
+        locations.add(nelson.province)
+      } else if (nelson.country && nelson.country !== 'South Africa') {
+        locations.add(nelson.country)
+      }
+    })
+    return ['All Locations', ...Array.from(locations).sort()]
+  }, [])
 
-    if (aRank !== bRank) {
-      return aRank - bRank
+  const visibleNelsons = useMemo(() => {
+    let filtered = [...staticNelsons]
+    
+    if (selectedLocation !== 'All Locations') {
+      filtered = staticNelsons.filter(nelson => 
+        nelson.province === selectedLocation || nelson.country === selectedLocation
+      )
     }
 
-    return a.name.localeCompare(b.name)
-  })
+    return filtered.sort((a, b) => {
+      const aRank = topProfileRank[a.slug] ?? Number.POSITIVE_INFINITY
+      const bRank = topProfileRank[b.slug] ?? Number.POSITIVE_INFINITY
+
+      if (aRank !== bRank) {
+        return aRank - bRank
+      }
+
+      return a.name.localeCompare(b.name)
+    })
+  }, [selectedLocation, topProfileRank])
 
   return (
     <main>
@@ -55,6 +79,28 @@ export default function NelsonsPage() {
       {/* Directory Grid */}
       <section className="py-20 bg-white">
         <div className="container">
+          {/* Filter Bar */}
+          <div className="mb-12 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="flex flex-wrap gap-2">
+              {locationOptions.map((location) => (
+                <button
+                  key={location}
+                  onClick={() => setSelectedLocation(location)}
+                  className={`px-6 py-2 rounded-full text-sm font-bold transition-all ${
+                    selectedLocation === location
+                      ? 'bg-primary-600 text-white shadow-lg shadow-primary-600/20'
+                      : 'bg-neutral-50 text-neutral-600 hover:bg-neutral-100'
+                  }`}
+                >
+                  {location}
+                </button>
+              ))}
+            </div>
+            <div className="text-sm font-medium text-neutral-400">
+              Showing {visibleNelsons.length} {visibleNelsons.length === 1 ? 'Nelson' : 'Nelsons'}
+            </div>
+          </div>
+
           {visibleNelsons.length === 0 ? (
             <div className="text-center py-20">
               <p className="text-neutral-500 text-lg">Our Nelson profiles are being prepared. Check back soon for stories of transformation.</p>

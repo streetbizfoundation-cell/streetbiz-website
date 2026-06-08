@@ -5,6 +5,8 @@ export const nelson: Nelson = {
   "name": "Cassidy Carstens",
   "slug": "cassidy-carstens",
   "location": "Western Cape, South Africa",
+  "province": "Western Cape",
+  "country": "South Africa",
   "short_description": "A Western Cape-based Be a Nelson changemaker committed to community impact.",
   "bio": "A member of the Be a Nelson Movement, part of a growing network of grassroots changemakers using social entrepreneurship, education, experience, and exposure to serve their communities.",
   "image_url": "/images/nelsons/cassidy-carstens.jpg",

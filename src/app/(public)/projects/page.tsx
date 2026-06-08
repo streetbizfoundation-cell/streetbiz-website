@@ -6,7 +6,7 @@ import { projects } from '@/content/projects'
 
 export const metadata = {
   title: 'Projects | StreetBiz Foundation',
-  description: 'Explore the StreetBiz Foundation projects: Be a Nelson Movement, OSUN, GLOBE, Be a Nelson Walk, and mentoring.',
+  description: 'Explore the StreetBiz Foundation projects: Be a Nelson Movement, Democratizing Innovation Institute, GLOBE, Be a Nelson Walk, and mentoring.',
 }
 
 export default function ProjectsPage() {

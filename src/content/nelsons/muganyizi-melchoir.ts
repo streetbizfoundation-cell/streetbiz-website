@@ -5,6 +5,7 @@ export const nelson: Nelson = {
   "name": "Muganyizi Melchoir",
   "slug": "muganyizi-melchoir",
   "location": "Biharamulo, Tanzania",
+  "country": "Tanzania",
   "short_description": "Founder of PALES, a Tanzanian grassroots NGO empowering women, health, and sustainable livelihoods.",
   "bio": `I was born in Kyerwa District in northwestern Tanzania, where schools were far away and essential services were almost non-existent. I did not attend the first grade until I was nine because I had to wait until I was strong enough to walk several kilometres to the nearest classroom.
 

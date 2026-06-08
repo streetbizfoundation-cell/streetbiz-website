@@ -12,15 +12,23 @@ I left home to study Occupational Health & Safety at the Pinotage Youth Developm
 
 “Big opportunities are waiting for you; you just have to go for it and grab them with both hands.”
 
+[IMAGE]/images/stories/from-richmonds-desert-to-konke-1.jpg[/IMAGE]
+
 Those words lit a path. With mentorship from the Be a Nelson / StreetBiz family and the courage that comes from being truly seen, I stepped forward.
 
-Today, I run Konke Bin Cleaning & Recycling in Belmont Park, Kraaifontein. We wash and sanitise household bins and help keep our streets clean and dignified. We currently serve about 50 clients and have created three jobs, including for two teammates who were homeless and can now pay for accommodation at a community shelter. Clean bins may sound small, but they change how a street feels and how a family begins the week. 
+Today, I run Konke Bin Cleaning & Recycling in Belmont Park, Kraaifontein. We wash and sanitise household bins and help keep our streets clean and dignified. We currently serve about 50 clients and have created three jobs, including for two teammates who were homeless and can now pay for accommodation at a community shelter. Clean bins may sound small, but they change how a street feels and how a family begins the week.
 
-Konke is also creative at heart. We run a small studio for young poets, artists and writers, mostly 18–25, who can’t afford upfront studio fees. We host training sessions before recording, so confidence grows alongside craft. We bring different disciplines together to make one collaborative masterpiece, and we organise fundraising events so artists can earn while they create. Nothing beats the moment someone hears their own voice, clear and proud, for the first time. 
+[IMAGE]/images/stories/leading-change-for-sustainability-2.png[/IMAGE]
+
+Konke is also creative at heart. We run a small studio for young poets, artists and writers, mostly 18–25, who can’t afford upfront studio fees. We host training sessions before recording, so confidence grows alongside craft. We bring different disciplines together to make one collaborative masterpiece, and we organise fundraising events so artists can earn while they create. Nothing beats the moment someone hears their own voice, clear and proud, for the first time.
+
+[IMAGE]/images/stories/from-richmonds-desert-to-konke-3.png[/IMAGE]
 
 This year, 2025, I was selected among the Top 10 young entrepreneurs in the Western Cape, and I’ll be pitching in Johannesburg in November. It’s a reminder that the work matters, and that we’re only getting started.
 
 What helps me keep going? Community. The guidance and accountability I’ve received through Be a Nelson / StreetBiz gave me language for my purpose and access to a network that cheers us on and challenges us to grow.
+
+[IMAGE]/images/stories/from-richmonds-desert-to-konke-4.jpg[/IMAGE]
 
 Where we’re headed: Over the next 36 months, our focus is to secure a bakkie (mini truck). Transport is our biggest barrier. A vehicle will let us reach more suburbs, serve more clients in a day, take on bigger contracts, and create more jobs, both in bin-cleaning crews and in our studio programming.
 

@@ -3,6 +3,8 @@ export interface Nelson {
   name: string
   slug: string
   location: string
+  province?: string
+  country?: string
   short_description: string
   bio: string
   image_url: string
@@ -40,6 +42,7 @@ export interface Project {
   content?: string
   objectives: string[]
   image_url?: string
+  video_url?: string
 }
 
 export interface Partner {

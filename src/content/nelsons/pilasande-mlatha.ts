@@ -5,6 +5,8 @@ export const nelson: Nelson = {
   "name": "Pilasande Mlatha",
   "slug": "pilasande-mlatha",
   "location": "Ngobozana, Eastern Cape, South Africa",
+  "province": "Eastern Cape",
+  "country": "South Africa",
   "short_description": "A chemistry master’s student and rural changemaker turning science, resilience, and mentorship into community impact.",
   "bio": `I come from Ngobozana, a small village in Lusikisiki, Eastern Cape. Raised by my grandmother, I learned early that education was not only a personal achievement but a responsibility to my family and community.
 

@@ -19,13 +19,14 @@ export function StoryCard({ story, nelsonName }: StoryCardProps) {
   return (
     <Link href={`/stories/${story.slug}`} className="group block">
       <Card className="overflow-hidden border-none shadow-none bg-transparent">
-        <div className="relative aspect-[16/9] overflow-hidden rounded-2xl mb-6">
+        <div className="relative w-full h-80 bg-neutral-100 rounded-2xl mb-6 overflow-hidden flex items-center justify-center">
           {story.featured_image ? (
             <Image
               src={story.featured_image}
               alt={story.title}
-              fill
-              className="object-cover transition-transform duration-1000 group-hover:scale-105"
+              width={500}
+              height={500}
+              className="max-w-full max-h-full object-contain transition-transform duration-1000 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
             />
           ) : (
@@ -33,7 +34,7 @@ export function StoryCard({ story, nelsonName }: StoryCardProps) {
               <span className="text-4xl">📖</span>
             </div>
           )}
-          <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500" />
+          <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500 pointer-events-none" />
         </div>
         
         <div className="space-y-3">
