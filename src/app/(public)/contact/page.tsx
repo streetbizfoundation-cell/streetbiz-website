@@ -101,7 +101,12 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-1">
                     <p className="text-[10px] font-bold uppercase tracking-widest text-neutral-400">Our Hub</p>
-                    <p className="text-lg font-bold text-neutral-900">Johannesburg, South Africa</p>
+                    <p className="text-lg font-bold text-neutral-900 leading-tight">
+                      205 Zeezicht<br />
+                      34 Beach Boulevard<br />
+                      Tableview, Cape Town<br />
+                      7441
+                    </p>
                   </div>
                 </div>
               </div>
