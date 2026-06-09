@@ -146,7 +146,7 @@ export default async function StoryReaderPage({ params }: StoryReaderPageProps) 
         <Link href="/stories" className="font-bold text-neutral-900 hover:text-primary-600 transition-colors">
           ← All Stories
         </Link>
-        <Link href="https://www.paypal.com/donate/?hosted_button_id=ZDJE4AWUAZV7Y" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-primary-600 text-white text-sm font-bold rounded-full hover:bg-primary-700 transition-colors">
+        <Link href="/donate" className="px-6 py-2 bg-primary-600 text-white text-sm font-bold rounded-full hover:bg-primary-700 transition-colors">
           Support the Movement
         </Link>
       </section>

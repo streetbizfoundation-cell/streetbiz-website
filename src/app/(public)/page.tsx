@@ -92,7 +92,7 @@ export default function HomePage() {
                   Apply Now
                 </Button>
               </Link>
-              <Link href="https://www.paypal.com/donate/?hosted_button_id=ZDJE4AWUAZV7Y" target="_blank" rel="noopener noreferrer">
+              <Link href="/donate">
                 <Button size="lg" className="px-8 py-5 sm:px-12 sm:py-8 text-lg sm:text-xl rounded-full shadow-2xl shadow-primary-600/20 bg-white text-primary-600 hover:bg-primary-50 border-none">
                   Donate
                 </Button>
@@ -340,7 +340,7 @@ export default function HomePage() {
               Young people do not need more speeches about potential. They need access, support, and real opportunities to grow. Partner with us to expand the Be a Nelson Movement, deepen our impact, and help more young changemakers rise.
             </Paragraph>
             <div className="pt-8 flex flex-col md:flex-row items-center justify-center gap-6">
-              <Link href="https://www.paypal.com/donate/?hosted_button_id=ZDJE4AWUAZV7Y" target="_blank" rel="noopener noreferrer">
+              <Link href="/donate">
                 <Button size="lg" className="bg-white text-primary-600 hover:bg-primary-50 px-12 py-8 text-xl rounded-full border-none shadow-2xl w-full md:w-auto">
                   Donate
                 </Button>
