@@ -22,8 +22,8 @@ type EventItem = {
 const upcomingEvents: EventItem[] = [
   {
     title: 'Be a Nelson Conference 2026',
-    date: '13–17 July 2026',
-    location: 'Ganzekraal, South Africa',
+    date: '14–15 July 2026',
+    location: 'Ganzekraal Coastal Resort, South Africa',
     description: 'The Be a Nelson Conference brings Nelsons together from across provinces for leadership development, connection, and shared learning. It is a key gathering in the movement calendar and creates space for growth, collaboration, and strengthening the future of the movement.',
     actions: [
       { label: 'Enquire About the Conference', href: '/contact' },
