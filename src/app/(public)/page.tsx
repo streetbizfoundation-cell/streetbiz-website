@@ -48,8 +48,8 @@ export default function HomePage() {
       {/* HERO SECTION */}
       <section className="relative min-h-screen pb-24 flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-          <div className="absolute inset-0 bg-neutral-900/60 z-10" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80 z-20" />
+          <div className="absolute inset-0 bg-neutral-900/30 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50 z-20" />
           <div className="absolute inset-0 overflow-hidden">
             <Image
               src="/images/brand/hero_cover_pic.jpg"
