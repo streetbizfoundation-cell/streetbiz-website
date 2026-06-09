@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { H1, H2, H3, Lead, Paragraph } from '@/components/common/Typography'
 import { Button } from '@/components/common/Button'
 import { CheckCircle, GraduationCap, Network, Zap } from 'lucide-react'
@@ -50,15 +51,12 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-neutral-900/60 z-10" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80 z-20" />
           <div className="absolute inset-0 overflow-hidden">
-            <iframe 
-              width="1920"
-              height="1080"
-              src="https://www.youtube.com/embed/EaS3IOjNCfg?si=SGl4dfDZqST15IZ8&autoplay=1&mute=1&controls=0&loop=1&playlist=EaS3IOjNCfg&showinfo=0&rel=0&iv_load_policy=3&vq=hd1080&playsinline=1" 
-              title="StreetBiz Foundation background story" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowFullScreen
-              className="absolute left-1/2 top-1/2 min-w-[800%] min-h-[800%] -translate-x-1/2 -translate-y-[50%] md:top-1/2 md:min-w-[115%] md:min-h-[115%] md:-translate-y-1/2"
+            <Image
+              src="/images/brand/hero_cover_pic.jpg"
+              alt="StreetBiz Foundation Hero"
+              fill
+              priority
+              className="object-cover"
             />
           </div>
         </div>
