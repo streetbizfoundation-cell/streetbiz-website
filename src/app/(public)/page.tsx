@@ -48,8 +48,7 @@ export default function HomePage() {
       {/* HERO SECTION */}
       <section className="relative min-h-screen pb-24 flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-          <div className="absolute inset-0 bg-neutral-900/30 z-10" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50 z-20" />
+          {/* No dark overlay - 0% transparency */}
           <div className="absolute inset-0 overflow-hidden">
             <Image
               src="/images/brand/hero_cover_pic.jpg"
@@ -293,7 +292,7 @@ export default function HomePage() {
               <h2 className="text-xs font-bold tracking-[0.3em] uppercase text-primary-600">Strategic Alignment</h2>
               <H2 className="text-4xl md:text-6xl font-serif">Why Partner with the Movement</H2>
             </div>
-            <div className="space-y-8 text-xl text-neutral-600 leading-relaxed">
+            <div className="space-y-8 text-xl text-neutral-600 leading-relaxed text-left max-w-4xl mx-auto">
               <p>
                 When you partner with <strong>StreetBiz Foundation</strong>, you invest in a movement that is practical, grounded, and ready to grow. Through the <strong>Be a Nelson Movement</strong>, we support young changemakers with access to learning, leadership development, mentorship, and real-world opportunities that strengthen communities from the ground up.
               </p>
@@ -301,21 +300,21 @@ export default function HomePage() {
                 We also understand that strong partnerships require trust, accountability, and the right compliance structures in place.
               </p>
               <p className="font-bold text-neutral-900">
-                <strong>StreetBiz Foundation holds a Section 18A certificate and is Public Benefit Organisation (PBO) compliant</strong>, enabling qualifying South African donors and companies to structure donations for tax benefit where applicable.
+                StreetBiz Foundation holds a Section 18A certificate and is Public Benefit Organisation (PBO) compliant, enabling South African donors to claim a tax benefit where applicable.
               </p>
               <p>
-                For international partners, we also work with trusted nonprofit partners through formal Memorandums of Understanding to help facilitate giving where tax-efficient structures may be needed.
+                <strong>International partners and donors</strong> have the PayPal option or to donate locally with trusted nonprofit partners with MOU’s with StreetBiz:
               </p>
-              <ul className="list-disc list-inside space-y-3 text-neutral-600">
+              <ul className="list-disc pl-8 space-y-3 text-neutral-600">
                 <li>
-                  <strong>For U.S.-based companies and donors:</strong> we can provide details of our partner organisation(s) that can assist where <strong>501(c)(3)</strong> giving mechanisms are required.
+                  <strong>U.S.A:</strong> we will gladly provide details of our partner 501(c)(3) organisation
                 </li>
                 <li>
-                  <strong>For European companies and donors:</strong> where a tax certificate is needed, we can provide details of a nonprofit organisation with whom we have a <strong>Memorandum of Understanding</strong>.
+                  <strong>Europe:</strong> we have more than one partner in Europe to donate for StreetBiz. We will gladly provide details if preferred instead of the PayPal option on the website.
                 </li>
               </ul>
-              <p className="font-medium text-neutral-900">
-                This means partners can support the movement with greater confidence, clarity, and alignment to their own giving and compliance requirements.
+              <p>
+                This means partners can support the movement with greater confidence, clarity, and alignment to their own donation and compliance requirements.
               </p>
             </div>
             <div className="mt-10 rounded-3xl border border-primary-200 bg-primary-50 px-8 py-8 text-center">
