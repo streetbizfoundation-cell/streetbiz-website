@@ -220,7 +220,7 @@ export default function EventsPage() {
             <div className="pt-8 flex flex-col md:flex-row items-center justify-center gap-6">
               <Link href="https://www.paypal.com/donate/?hosted_button_id=ZDJE4AWUAZV7Y" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-white text-primary-600 hover:bg-primary-50 px-12 py-8 text-xl rounded-full border-none shadow-2xl w-full md:w-auto">
-                  Fund the Movement
+                  Donate
                 </Button>
               </Link>
               <Link href="/partners">

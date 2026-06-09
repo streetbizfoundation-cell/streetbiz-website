@@ -11,7 +11,7 @@ export const metadata = {
     title: 'Our Partners | StreetBiz Foundation',
     description:
       'The organisations and individuals who make the Be a Nelson Movement possible through collaboration, mentorship and support.',
-    url: 'https://streetbizfoundation.org/partners',
+    url: 'https://streetbiz.co.za/partners',
     images: [
       {
         url: '/images/brand/streetbiz-logo.png',

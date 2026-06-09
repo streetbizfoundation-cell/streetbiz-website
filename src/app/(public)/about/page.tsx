@@ -195,7 +195,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {leadership.map((member) => (
               <div key={member.name} className="bg-white p-8 rounded-3xl border border-neutral-200 shadow-sm flex flex-col sm:flex-row gap-8 items-start">
-                <div className="relative w-full sm:w-40 h-52 shrink-0 overflow-hidden rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 shadow-md">
+                <div className="relative w-full aspect-[3/4] sm:aspect-auto sm:w-48 sm:h-64 shrink-0 overflow-hidden rounded-2xl grayscale hover:grayscale-0 transition-all duration-500 shadow-md">
                   <Image
                     src={member.image_url}
                     alt={member.name}

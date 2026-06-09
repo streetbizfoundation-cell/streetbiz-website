@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import '@/styles/globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://streetbizfoundation.org'),
+  metadataBase: new URL('https://streetbiz.co.za'),
   title: 'StreetBiz Foundation - The Be a Nelson Movement',
   description:
     'Real stories of transformation. Supporting the Be a Nelson Movement to create lasting change in lives and communities.',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://streetbizfoundation.org',
+    url: 'https://streetbiz.co.za',
     title: 'StreetBiz Foundation - The Be a Nelson Movement',
     description:
       'Real stories of transformation. Supporting the Be a Nelson Movement to create lasting change.',
