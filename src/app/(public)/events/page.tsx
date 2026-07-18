@@ -21,16 +21,6 @@ type EventItem = {
 
 const upcomingEvents: EventItem[] = [
   {
-    title: 'Be a Nelson Conference 2026',
-    date: '14–15 July 2026',
-    location: 'Ganzekraal Coastal Resort, South Africa',
-    description: 'The Be a Nelson Conference brings Nelsons together from across provinces for leadership development, connection, and shared learning. It is a key gathering in the movement calendar and creates space for growth, collaboration, and strengthening the future of the movement.',
-    actions: [
-      { label: 'Enquire About the Conference', href: '/contact' },
-      { label: 'Sponsor the Conference', href: '/donate' },
-    ],
-  },
-  {
     title: 'Be a Nelson Walk / South Africa Adventure 2026',
     date: '6–15 October 2026',
     location: 'Western Cape, South Africa',
@@ -44,6 +34,13 @@ const upcomingEvents: EventItem[] = [
 ]
 
 const pastEvents: EventItem[] = [
+  {
+    title: 'Be a Nelson Conference 2026',
+    date: '13–15 July 2026',
+    location: 'Ganzekraal Coastal Resort (Western Cape) & KSM, Centurion (Gauteng), South Africa',
+    description: 'The Be a Nelson Conference brings Nelsons together from across provinces for leadership development, connection, and shared learning. In the Western Cape, Nelsons gathered at the Ganzekraal Coastal Resort from 13–14 July, while the Gauteng event took place at KSM in Centurion on 15 July.',
+    outcome: 'The conferences successfully brought together changemakers across two provinces to connect, collaborate, and strengthen the future of the movement.',
+  },
   {
     title: 'Be a Nelson Pitch Competition',
     date: 'June 16, 2025',

@@ -12,6 +12,7 @@ const navigation = [
   { name: 'Nelsons', href: '/nelsons' },
   { name: 'Stories', href: '/stories' },
   { name: 'Events', href: '/events' },
+  { name: 'Gallery', href: '/gallery' },
   { name: 'Projects', href: '/projects' },
   { name: 'Partners', href: '/partners' },
   { name: 'Contact', href: '/contact' },
@@ -39,7 +40,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-1">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -53,14 +54,14 @@ export function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-4">
-            <Link href="/donate" className="hidden md:block">
+            <Link href="/donate" className="hidden lg:block">
               <Button>Donate</Button>
             </Link>
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-neutral-700 hover:bg-neutral-100"
+              className="lg:hidden inline-flex items-center justify-center rounded-md p-2 text-neutral-700 hover:bg-neutral-100"
             >
               {mobileOpen ? (
                 <X className="w-6 h-6" />
@@ -73,7 +74,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {mobileOpen && (
-          <div className="md:hidden border-t border-neutral-200 py-4 space-y-2">
+          <div className="lg:hidden border-t border-neutral-200 py-4 space-y-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}

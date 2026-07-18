@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: 'streetbiz.co.za',
         pathname: '/wp-content/uploads/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+        pathname: '/vi/**',
+      },
     ],
   },
 };
