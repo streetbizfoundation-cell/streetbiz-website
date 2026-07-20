@@ -246,7 +246,6 @@ export default function GalleryPage() {
                         if (category.id === 'all') {
                           return galleryItems.filter((i) => i.albumId === activeAlbumId).length
                         }
-                        if (category.id === 'gauteng-2026') return 0 // Stub count
                         return galleryItems.filter((i) => i.albumId === activeAlbumId && i.category === category.id).length
                       }
                       
