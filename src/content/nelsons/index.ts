@@ -38,6 +38,11 @@ import { nelson as fortunate_mokoena } from './fortunate-mokoena'
 import { nelson as ray_mwanza } from './ray-mwanza'
 import { nelson as muganyizi_melchoir } from './muganyizi-melchoir'
 import { nelson as mandela_nkabila } from './mandela-nkabila'
+import { nelson as kiara_van_neel } from './kiara-van-neel'
+import { nelson as mandla_langa } from './mandla-langa'
+import { nelson as kabelo_waleng } from './kabelo-waleng'
+import { nelson as lutendo_nesengani } from './lutendo-nesengani'
+import { nelson as angel_nemakonde } from './angel-nemakonde'
 
 export const nelsons = [
   rebelani_manweli,
@@ -79,5 +84,10 @@ export const nelsons = [
   fortunate_mokoena,
   ray_mwanza,
   muganyizi_melchoir,
-  mandela_nkabila
+  mandela_nkabila,
+  kiara_van_neel,
+  mandla_langa,
+  kabelo_waleng,
+  lutendo_nesengani,
+  angel_nemakonde
 ]
