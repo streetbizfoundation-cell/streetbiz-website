@@ -43,6 +43,8 @@ import { nelson as mandla_langa } from './mandla-langa'
 import { nelson as kabelo_waleng } from './kabelo-waleng'
 import { nelson as lutendo_nesengani } from './lutendo-nesengani'
 import { nelson as angel_nemakonde } from './angel-nemakonde'
+import { nelson as lerato_hanyane } from './lerato-hanyane'
+import { nelson as tumelo_maganyela } from './tumelo-maganyela'
 
 export const nelsons = [
   rebelani_manweli,
@@ -89,5 +91,7 @@ export const nelsons = [
   mandla_langa,
   kabelo_waleng,
   lutendo_nesengani,
-  angel_nemakonde
+  angel_nemakonde,
+  lerato_hanyane,
+  tumelo_maganyela
 ]
