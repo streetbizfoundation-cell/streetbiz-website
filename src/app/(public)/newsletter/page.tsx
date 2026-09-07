@@ -68,7 +68,7 @@ export default function NewsletterArchivePage() {
               href="https://streetbiz.us10.list-manage.com/subscribe?u=80acd5ee1259b06c495b07222&id=18b999605c"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-12 py-4 bg-primary-600 text-white font-bold rounded-full hover:bg-primary-700 transition-all shadow-xl shadow-primary-600/30 scale-100 hover:scale-105"
+              className="inline-block px-8 py-3.5 bg-primary-600 text-white font-semibold text-base rounded-full hover:bg-primary-700 transition-all shadow-lg shadow-primary-600/20"
             >
               Subscribe to our Newsletter
             </Link>

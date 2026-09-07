@@ -87,7 +87,7 @@ export default function ProjectsPage() {
               StreetBiz partnerships with universities, mentors, coaches, environmental programs, and local communities prove that changemakers do not need traditional pathways to make meaningful contributions.
             </Paragraph>
             <Link href="/contact">
-              <Button size="lg" className="rounded-full px-12 py-8 text-lg font-bold">
+              <Button className="rounded-full px-8 py-3.5 text-base font-semibold shadow-lg shadow-primary-600/20">
                 Partner With StreetBiz
               </Button>
             </Link>

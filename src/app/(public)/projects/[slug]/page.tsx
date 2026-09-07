@@ -252,12 +252,12 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                   </Paragraph>
                   <div className="space-y-4">
                     <Link href="/contact" className="block">
-                      <Button className="w-full rounded-full py-6 text-lg font-bold">
+                      <Button className="w-full rounded-full py-3.5 text-base font-semibold">
                         Partner With Us
                       </Button>
                     </Link>
                     <Link href="/apply" className="block">
-                      <Button variant="secondary" className="w-full rounded-full py-6 text-lg font-bold border-neutral-200 hover:border-neutral-900">
+                      <Button variant="secondary" className="w-full rounded-full py-3.5 text-base font-semibold border-neutral-200 hover:border-neutral-900">
                         Become a Nelson
                       </Button>
                     </Link>
@@ -292,12 +292,12 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/contact">
-                <Button size="lg" className="rounded-full px-10 py-7 text-lg font-bold bg-white text-neutral-900 hover:bg-neutral-200 border-none">
+                <Button className="rounded-full px-8 py-3.5 text-base font-semibold bg-white text-neutral-900 hover:bg-neutral-200 border-none shadow-lg">
                   Get in Touch
                 </Button>
               </Link>
               <Link href="/stories">
-                <Button size="lg" variant="secondary" className="rounded-full px-10 py-7 text-lg font-bold border-white/20 text-white hover:bg-white/10 hover:border-white/40">
+                <Button variant="secondary" className="rounded-full px-8 py-3.5 text-base font-semibold border-white/20 text-white hover:bg-white/10 hover:border-white/40">
                   Read Impact Stories
                 </Button>
               </Link>

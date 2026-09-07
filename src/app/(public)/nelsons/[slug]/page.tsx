@@ -129,7 +129,7 @@ export default async function NelsonProfilePage({ params }: NelsonProfilePagePro
                     By donating, you contribute directly to the resources and support systems that empower {profile.name.split(' ')[0]} and others in the movement.
                   </p>
                   <Link href="/donate" className="w-full">
-                    <Button className="w-full py-6 text-lg rounded-full">
+                    <Button className="w-full py-3.5 text-base font-semibold rounded-full">
                       Donate in Honor of {profile.name.split(' ')[0]}
                     </Button>
                   </Link>
