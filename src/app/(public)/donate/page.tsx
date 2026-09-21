@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Image from 'next/image'
 import { H1, H2, Paragraph, Lead } from '@/components/common/Typography'
 import { CreditCard, Globe, Heart, Sparkles, ShieldCheck } from 'lucide-react'
@@ -10,9 +10,15 @@ const currencies = [
   { code: 'EUR', name: 'Euro', symbol: '€' },
 ]
 
+const PRESET_AMOUNTS = ['10', '25', '50', '100', '250']
+
 export default function DonatePage() {
   const [currency, setCurrency] = useState('USD')
   const [amount, setAmount] = useState('25')
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  const activeCurrency = currencies.find((c) => c.code === currency) || currencies[0]
+  const symbol = activeCurrency.symbol
 
   const selectCurrency = (code: string) => {
     setCurrency(code)
@@ -20,6 +26,9 @@ export default function DonatePage() {
 
   const selectAmount = (val: string) => {
     setAmount(val)
+    if (!val) {
+      inputRef.current?.focus()
+    }
   }
 
   return (
@@ -136,37 +145,88 @@ export default function DonatePage() {
                       </div>
                     </div>
 
-                    <div className="space-y-3">
+                    <div className="space-y-4">
                       <label className="block text-xs font-bold uppercase tracking-widest text-neutral-500">
-                        Select Amount
+                        Select or Enter Amount
                       </label>
                       <div className="grid grid-cols-3 gap-3 mb-3">
-                        {['10', '25', '50', '100', '250'].map((val) => (
+                        {PRESET_AMOUNTS.map((val) => (
                           <button
                             key={val}
                             type="button"
                             onClick={() => selectAmount(val)}
                             className={`py-3 rounded-2xl text-sm font-bold transition-all border-2 ${
                               amount === val
-                                ? 'border-primary-600 bg-primary-50 text-primary-600 shadow-sm'
-                                : 'border-neutral-100 bg-neutral-50 text-neutral-700 hover:border-neutral-200'
+                                ? 'bg-neutral-900 text-white border-neutral-900 shadow-sm'
+                                : 'bg-white text-neutral-700 border-neutral-200 hover:border-neutral-900'
                             }`}
                           >
-                            {currency === 'USD' ? '$' : '€'}{val}
+                            {symbol}{val}
                           </button>
                         ))}
+                        <button
+                          type="button"
+                          onClick={() => selectAmount('')}
+                          className={`py-3 rounded-2xl text-sm font-bold transition-all border-2 ${
+                            !PRESET_AMOUNTS.includes(amount)
+                              ? 'bg-neutral-900 text-white border-neutral-900 shadow-sm'
+                              : 'bg-white text-neutral-700 border-neutral-200 hover:border-neutral-900'
+                          }`}
+                        >
+                          Other
+                        </button>
+                      </div>
+
+                      {/* Custom Amount Input Box */}
+                      <div className="space-y-1.5 pt-1">
+                        <label
+                          htmlFor="custom-amount"
+                          className="block text-xs font-semibold text-neutral-600"
+                        >
+                          Or enter your own amount
+                        </label>
+                        <div className="relative flex items-center">
+                          <span className="absolute left-4 text-neutral-400 font-bold text-base pointer-events-none select-none">
+                            {symbol}
+                          </span>
+                          <input
+                            id="custom-amount"
+                            ref={inputRef}
+                            type="number"
+                            min="1"
+                            step="0.01"
+                            placeholder="0.00"
+                            value={amount}
+                            onChange={(e) => setAmount(e.target.value)}
+                            className="w-full pl-9 pr-4 py-3 rounded-2xl text-sm font-bold transition-all border-2 border-neutral-200 bg-white text-neutral-900 focus:border-primary-600 focus:ring-2 focus:ring-primary-500/20 outline-none"
+                            required
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="pt-2">
-                    <a
-                      href={`mailto:hello@streetbiz.co.za?subject=Donation%20Inquiry%20(${currency}%20${amount})`}
-                      className="block w-full text-center py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold text-base rounded-full shadow-lg transition-colors"
+                  {/* Submission Form to PayPal */}
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="POST" target="_top" className="space-y-4 pt-2">
+                    <input type="hidden" name="cmd" value="_donations" />
+                    <input type="hidden" name="business" value="nico@streetbiz.co.za" />
+                    <input type="hidden" name="item_name" value="Donation to StreetBiz Foundation" />
+                    <input type="hidden" name="currency_code" value={currency} />
+                    <input type="hidden" name="amount" value={amount} />
+                    <input type="hidden" name="no_shipping" value="1" />
+
+                    <button
+                      type="submit"
+                      disabled={!amount || parseFloat(amount) <= 0}
+                      className="w-full py-4 text-base font-bold text-white bg-primary-600 hover:bg-primary-700 rounded-full shadow-lg shadow-primary-600/25 hover:shadow-xl transition-all active:scale-[0.99] disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                     >
-                      Inquire About Giving {currency === 'USD' ? '$' : '€'}{amount}
-                    </a>
-                  </div>
+                      Donate via PayPal
+                    </button>
+                    
+                    <p className="text-center text-xs text-neutral-500">
+                      You will be redirected to PayPal to complete your donation securely.
+                    </p>
+                  </form>
 
                   <div className="p-4 rounded-2xl bg-neutral-50 border border-neutral-200 text-center space-y-1">
                     <div className="flex items-center justify-center gap-1.5 text-primary-700 font-bold text-xs">
