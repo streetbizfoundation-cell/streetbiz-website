@@ -6,13 +6,22 @@ import { H1, Lead } from '@/components/common/Typography'
 import { StoryCard } from '@/components/sections/StoryCard'
 import { stories as staticStories } from '@/content/stories'
 import { findNelson } from '@/content/utils'
+import type { Story } from '@/lib/types/content'
+
+// Temporary local listing preview; production keeps these direct-link stories unlisted.
+const previewStories: Story[] = process.env.NODE_ENV === 'development' ? [
+  { id: 'mahlatse-pride-molepo', slug: 'mahlatse-pride-molepo', title: 'Meet Mahlatse Pride Molepo', excerpt: 'Rebuilding life and choosing hope', featured_image: '/images/newsletter 3 images/Picture 1 LEFT.jpg' },
+  { id: 'rabelani-manweli', slug: 'rabelani-manweli', title: 'Meet Rabelani Manweli', excerpt: 'Building the safe spaces I once needed', featured_image: '/images/newsletter 3 images/Picture 3 LEFT.jpg' },
+  { id: 'tanyaradzwa-mupfure', slug: 'tanyaradzwa-mupfure', title: 'Meet Tanyaradzwa Mupfure', excerpt: 'From being comforted to comforting others', featured_image: '/images/newsletter 3 images/Picture 5 LEFT.jpg' },
+].map((story) => ({ ...story, category: 'Nelson Stories', content: '', publish_date: '2026-11-12', is_featured: false })) : []
+const listedStories = [...previewStories, ...staticStories]
 
 export default function StoriesPage() {
   const [selectedFilter, setSelectedFilter] = useState('All')
 
   const filterOptions = useMemo(() => {
     const categories = Array.from(new Set(
-      staticStories
+      listedStories
         .map((story) => story.category)
         .filter((cat): cat is NonNullable<typeof cat> => Boolean(cat) && cat !== 'Nelson Stories')
     )).sort()
@@ -20,18 +29,18 @@ export default function StoriesPage() {
   }, [])
 
   const visibleStories = useMemo(() => {
-    let filtered = staticStories
+    let filtered = listedStories
     
     if (selectedFilter === 'All') {
-      filtered = staticStories
+      filtered = listedStories
     } else if (selectedFilter === 'Nelson Stories') {
-      filtered = staticStories.filter((story) => Boolean(story.nelson_slug))
+      filtered = listedStories.filter((story) => Boolean(story.nelson_slug) || story.category === 'Nelson Stories')
     } else {
-      filtered = staticStories.filter((story) => story.category === selectedFilter)
+      filtered = listedStories.filter((story) => story.category === selectedFilter)
     }
 
     // Sort by publish_date in descending order (latest first)
-    return filtered.sort((a, b) => 
+    return [...filtered].sort((a, b) =>
       new Date(b.publish_date).getTime() - new Date(a.publish_date).getTime()
     )
   }, [selectedFilter])

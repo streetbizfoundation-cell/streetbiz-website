@@ -4,6 +4,12 @@ import Link from 'next/link'
 import { H1 } from '@/components/common/Typography'
 import { findStory, findNelson } from '@/content/utils'
 import { stories as staticStories } from '@/content/stories'
+import { unlistedStories } from '@/content/stories/drafts'
+
+// Direct links work, while public feeds continue to use the published registry only.
+function findReadableStory(slug: string) {
+  return findStory(slug) ?? unlistedStories.find((story) => story.slug === slug)
+}
 
 interface StoryReaderPageProps {
   params: Promise<{
@@ -13,25 +19,28 @@ interface StoryReaderPageProps {
 
 export async function generateMetadata({ params }: StoryReaderPageProps) {
   const { slug } = await params
-  const visibleStory = findStory(slug)
+  const visibleStory = findReadableStory(slug)
 
   if (!visibleStory) return { title: 'Story Not Found' }
 
   return {
     title: `${visibleStory.title} | StreetBiz Foundation Stories`,
     description: visibleStory.excerpt,
+    ...(unlistedStories.some((story) => story.slug === slug)
+      ? { robots: { index: false, follow: false } }
+      : {}),
   }
 }
 
 export function generateStaticParams() {
-  return staticStories.map((story) => ({
+  return [...staticStories, ...unlistedStories].map((story) => ({
     slug: story.slug,
   }))
 }
 
 export default async function StoryReaderPage({ params }: StoryReaderPageProps) {
   const { slug } = await params
-  const visibleStory = findStory(slug)
+  const visibleStory = findReadableStory(slug)
 
   if (!visibleStory) {
     notFound()
@@ -75,8 +84,29 @@ export default async function StoryReaderPage({ params }: StoryReaderPageProps) 
       <article className="container max-w-3xl">
         <div className="prose prose-lg prose-neutral max-w-none prose-headings:font-serif prose-p:leading-loose prose-p:text-neutral-700">
           {/* Parse content for inline images */}
-          {visibleStory.content.split(/(\[IMAGE\][\s\S]*?\[\/IMAGE\])/).map((part, idx) => {
-            if (part.startsWith('[IMAGE]')) {
+          {visibleStory.content.split(/(\[IMAGE\][\s\S]*?\[\/IMAGE\]|\[IMAGE_PAIR\][\s\S]*?\[\/IMAGE_PAIR\]|\[HEADING\][\s\S]*?\[\/HEADING\]|\[EMAIL\][\s\S]*?\[\/EMAIL\])/).map((part, idx) => {
+            if (part.startsWith('[IMAGE_PAIR]')) {
+              const { images, caption } = JSON.parse(part.slice(12, -13)) as {
+                images: { src: string; alt: string }[]
+                caption: string
+              }
+              return (
+                <figure key={idx} className="my-12">
+                  <div className="grid grid-cols-2 gap-3 md:gap-6">
+                    {images.map((image) => (
+                      <div key={image.src} className="flex items-center justify-center overflow-hidden rounded-2xl bg-neutral-100">
+                        <Image src={image.src} alt={image.alt} width={600} height={450} sizes="(max-width: 768px) 45vw, 360px" className="h-auto max-h-[500px] w-full object-contain" />
+                      </div>
+                    ))}
+                  </div>
+                  <figcaption className="mt-3 text-sm text-neutral-500">{caption}</figcaption>
+                </figure>
+              )
+            } else if (part.startsWith('[HEADING]')) {
+              return <h2 key={idx} className="mt-10 mb-4 font-serif text-2xl font-bold">{part.slice(9, -10)}</h2>
+            } else if (part.startsWith('[EMAIL]')) {
+              return <a key={idx} href="mailto:hello@streetbiz.co.za" className="my-6 inline-block font-semibold text-primary-600 underline underline-offset-4">{part.slice(7, -8)}</a>
+            } else if (part.startsWith('[IMAGE]')) {
               const match = part.match(/\[IMAGE\]([\s\S]*?)\[\/IMAGE\]/)
               if (match) {
                 const imagePath = match[1].trim()

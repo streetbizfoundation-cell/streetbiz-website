@@ -168,6 +168,20 @@ export default function GalleryPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {process.env.NODE_ENV === 'development' && (
+                  <Link href="/gallery/just-make-it-work" className="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200/60 bg-white shadow-sm transition-all duration-300 hover:border-neutral-300 hover:shadow-xl">
+                    <div className="relative h-60 w-full overflow-hidden bg-neutral-100">
+                      <Image src="/images/newsletter 3 images/Picture 9.jpg" alt="Just Make It Work – The StreetBiz Story" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+                    <div className="flex flex-1 flex-col justify-between p-6">
+                      <div>
+                        <h3 className="font-serif text-xl font-bold text-neutral-900 group-hover:text-primary-600">Watch Just Make It Work</h3>
+                        <Paragraph className="mt-2.5 text-sm leading-relaxed text-neutral-500">Meet the Nelsons through film. Discover Stefan Kuttler’s documentary and the people behind the movement.</Paragraph>
+                      </div>
+                      <span className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-primary-600">Read more <ArrowRight className="h-4 w-4" /></span>
+                    </div>
+                  </Link>
+                )}
                 {galleryAlbums.map((album) => {
                   const { photos, videos } = getAlbumStats(album.id)
                   return (

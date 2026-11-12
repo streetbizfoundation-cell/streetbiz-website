@@ -35,7 +35,18 @@ const upcomingEvents: EventItem[] = [
   },
 ]
 
+const previewEvents: EventItem[] = process.env.NODE_ENV === 'development' ? [{
+  title: 'Learning together | Angel Nemakonde',
+  date: 'July 2026',
+  location: 'Western Cape & Gauteng, South Africa',
+  description: 'A gathering that reminded us we are not alone. Across two Be a Nelson conferences, 56 participants came together to learn, share experiences and explore leadership in their communities.',
+  imageUrl: '/images/newsletter 3 images/Picture 7.jpg',
+  imageAlt: 'The July 2026 Be a Nelson conference in Gauteng',
+  actions: [{ label: 'Read more', href: '/events/learning-together' }],
+}] : []
+
 const pastEvents: EventItem[] = [
+  ...previewEvents,
   {
     title: 'Be a Nelson Conference 2026',
     date: '13–15 July 2026',
@@ -247,6 +258,9 @@ export default function EventsPage() {
                     {/* Right: Narrative Details */}
                     <div className="lg:col-span-8 p-6 sm:p-8 md:p-12 space-y-6 flex flex-col justify-center">
                       <H3 className="text-2xl md:text-3xl font-serif text-neutral-900">{event.title}</H3>
+                      {event.actions?.map((action) => (
+                        <Link key={action.href} href={action.href} className="font-semibold text-primary-600 underline underline-offset-4">{action.label} →</Link>
+                      ))}
                       <div className="space-y-6 text-base md:text-lg text-neutral-600 leading-relaxed">
                         <p>{event.description}</p>
                         {event.outcome && (
